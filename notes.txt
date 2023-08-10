@@ -1,0 +1,62 @@
+** HTML Structure **
+
+<!Doctype html>
+
+<html lang="en">
+
+<head>
+<meta charset = "UTF-8" />
+<title>HTML STRUCTURE</title>
+</head>
+
+<body>
+<h1>HTML</h1>
+<p>This is the Structure</p>
+</body>
+
+</html>
+
+#only 1 h1 per webpage!
+
+USE Semantic (HTML5):
+<strong> </strong> = bold; instead of <b></b>
+<em> </em> = italic/emphasize; instead of <i></i>
+
+#Parent elements
+<ol> </ol> = ordered list (1,2,3,..numbers)
+<ul> </ul> = unordered list (bulets..)
+#Child element
+<li> </li> = list items/individual items
+
+#inserting images..
+<img src="name.jpg" alt="alternative name" width="px" height="px" />
+--specify attribute describing the element: src(source), alt(alternative text), width, height..
+
+#inserting links..
+<a href="link here" target="_blank"> </a> = anchor
+_blank = open new tab
+# = specify in href if link is blank, will return to top of page.
+
+#adding new page for link
+just create a new .html file
+
+#structuring/grouping html (adding container elements)
+<nav> </nav> = navigation box for links/anchor elements; div is a generic element with no meaning and just a box.
+<header> </header> = webpage heading
+<article> </article> = contain main parts of the page; you can add another header child element inside the article
+<aside> </aside> = related posts, suggest after the article element
+<footer> </footer> = footer
+<p> </p> = paragraph
+
+Parent element = <body></body>
+Child elements = <header></header> and <article></article>
+
+--**SEMANTIC HTML5
+Semantics = think about what that element actually means and what it stands for.. 
+Eliminate the use of generic divs by using..
+<nav></nav>
+<header></header>
+<article></article>
+<aside></aside>
+<footer></footer>
+<p></p>

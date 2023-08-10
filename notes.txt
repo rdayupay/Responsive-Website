@@ -1,0 +1,17 @@
+** HTML Structure **
+
+<!Doctype html>
+
+<html>
+
+<head>
+<meta charset = "UTF-8" />
+<title>HTML STRUCTURE</title>
+</head>
+
+<body>
+<h1>HTML</h1>
+<p>This is the Structure</p>
+</body>
+
+</html>

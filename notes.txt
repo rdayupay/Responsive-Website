@@ -60,3 +60,37 @@ Eliminate the use of generic divs by using..
 <aside></aside>
 <footer></footer>
 <p></p>
+<button></button>
+
+
+----CSS (Cascading Style Sheets)-------
+- describes the visual style and presentation of the content written in HTML
+
+h1 {
+  color: blue;
+  text-align: center;
+  font-size: 20px;
+}
+
+h1 - selector (all h1)
+font-size: 20px; - declaration/style
+font-size - property
+20px - value
+{ } - declaration block
+
+Selector and declaration block = called CSS RULE
+
+*Inline style - never use this!
+<h1 style="color: blue"> </h1>
+
+*Internal CSS
+- insert <style></style> inside <head></head>
+- add the CSS Rule (selector and declaration block) (h1, etc..)
+seperation of concern
+
+*External CSS
+- create a seperare style.css file and move all css declaration to this file
+- link the css file to the html file by
+- adding <link href="style.css" rel="stylesheet" /> inside <head></head>
+
+6 Properties to style text in CSS

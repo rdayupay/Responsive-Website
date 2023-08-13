@@ -60,3 +60,4 @@ Eliminate the use of generic divs by using..
 <aside></aside>
 <footer></footer>
 <p></p>
+<button></button>

@@ -114,3 +114,25 @@ rgb(0, 0, 0) / #000000 / #000
 rgb(255, 255, 255) / #ffffff / #fff
 
 
+-- PSEUDO-CLASSES - you can select the position of the child elemnt in you parent element, instead of adding classes in each line.
+- very useful for alternating tables or list.
+USE THIS
+li:first-child {
+  font-weight: bold;
+}
+
+li:nth-child(2) {
+  color: red;
+}
+
+li:nth-child(odd) {
+  color: red;
+}
+
+EXCEPTIONS:
+THIS WILL NOT WORK!
+article p:first-child {
+  color: red;
+}
+
+Since <header></header> is the first child of <article></article> and not <p></p>.

@@ -94,3 +94,53 @@ seperation of concern
 - adding <link href="style.css" rel="stylesheet" /> inside <head></head>
 
 6 Properties to style text in CSS
+
+
+*Inheritance - all paragraphs will have the same font-size
+
+text-transform = for uppercase
+style the li{} elements, not the ol{} or ul{}
+
+*Combine the Selectors
+1. List Selector
+h1, h2, h3, h4, p, li {
+  font-family: sans-serif;
+}
+
+2. Descendant Selector - will select the p{} inside the footer element.
+footer p {
+  font-size: 16px;
+}
+
+//this encodes the html structure into css, which is not a good idea!
+article header p {
+  font-style: italic;
+}
+
+3. Class and ID Selector - name the element to avoid using Descendant selector.
+--> ID vs Class Selector
+ID names cannot be repeated!
+Use CLASS if you need to reuse names multiple times!
+
+--> ID Selector - uses #
+HTML file:
+<p id="author"> </p>
+
+CSS file:
+#author {
+  font-style: italic;
+}
+
+
+--> CLASS Selector - uses . (dot)
+HTML file:
+<p class="related-author"> </p>
+
+CSS file:
+.related-author {
+  font-size: 18px;
+}
+
+In reality:
+1. You don't use ID
+2. You will mostly use Class to anticipate future changes.. (even if used only once)

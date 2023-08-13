@@ -1,0 +1,116 @@
+*** CSS (Cascading Style Sheets) ***
+- describes the visual style and presentation of the content written in HTML
+
+h1 {
+  color: blue;
+  text-align: center;
+  font-size: 20px;
+}
+
+h1 - selector (all h1)
+font-size: 20px; - declaration/style
+font-size - property
+20px - value
+{ } - declaration block
+
+Selector and declaration block = called CSS RULE
+
+*Inline style - never use this!
+<h1 style="color: blue"> </h1>
+
+*Internal CSS
+- insert <style></style> inside <head></head>
+- add the CSS Rule (selector and declaration block) (h1, etc..)
+seperation of concern
+
+*External CSS
+- create a seperare style.css file and move all css declaration to this file
+- link the css file to the html file by
+- adding <link href="style.css" rel="stylesheet" /> inside <head></head>
+
+6 Properties to style text in CSS
+
+
+*Inheritance - all paragraphs will have the same font-size
+
+text-transform = for uppercase
+style the li{} elements, not the ol{} or ul{}
+
+*Element selector - when you use the element name as the selector.
+h1 {}
+
+*Combine the Selectors
+1. List Selector
+h1, h2, h3, h4, p, li {
+  font-family: sans-serif;
+}
+
+2. Descendant Selector - will select the p{} inside the footer element.
+footer p {
+  font-size: 16px;
+}
+
+//this encodes the html structure into css, which is not a good idea!
+article header p {
+  font-style: italic;
+}
+
+3. Class and ID Selector - name the element to avoid using Descendant selector.
+--> ID vs Class Selector
+ID names cannot be repeated!
+Use CLASS if you need to reuse names multiple times!
+
+--> ID Selector - uses #
+HTML file:
+<p id="author"> </p>
+
+CSS file:
+#author {
+  font-style: italic;
+}
+
+--> CLASS Selector - uses . (dot)
+HTML file:
+<p class="related-author"> </p>
+
+CSS file:
+.related-author {
+  font-size: 18px;
+}
+
++-----------------------------------------------------------+
+| In reality:                                               |
+|1. You don't use ID                                        |
+|2. You will mostly use Class to anticipate future changes. |
+|(even if used only once)                                   |
++-----------------------------------------------------------+
+
+
+CSS Color:
+1. RGB/RGBA Notation
+1.1 Regular RGB
+rgb(0, 255, 255)
+1.2 RGB w/ transparency - alpha value
+rgba(0,255, 255, 0.3)
+
+2. HEXADECIMAL Notation
+2.1 Instead of 0-255, we'll use 0-ff
+#00ffff
+2.2 Shorthand - for identical pairs
+#0ff
+
++---------------------------------------------+
+| In practice, you'll use HEXADECIMAL colors, |
+|and RGBA when TRANSPARENCY is needed.        |
++---------------------------------------------+
+
+Shades of GREY
+- when colors in all 3 channels are the SAME,
+we get a GREY color.
+- there are 256 pure grays to choose from
+rgb(0, 0, 0) / #000000 / #000
+  | rgb(69, 69, 69) / #444444 / #444
+  | rgb(183, 183, 183) / #b7b7b7
+rgb(255, 255, 255) / #ffffff / #fff
+
+

@@ -136,3 +136,31 @@ article p:first-child {
 }
 
 Since <header></header> is the first child of <article></article> and not <p></p>.
+
+*-- Styling LINKS --*
+Using Pseudo-class, this will target actual links.
+
++---------------------------------------------+
+| LINK SHOULD BE DEFINED IN THIS ORDER (LVHA) |
++---------------------------------------------+
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /* color: #777; */
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orange;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}

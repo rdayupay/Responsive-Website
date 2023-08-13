@@ -107,8 +107,31 @@ li:nth-child(odd) {
   /* color: blue; */
 }
 
-/* article p:first-child {
-  color: red;
-} */
+/* Below code will not work since <header></header> is the first child of <article></article> and not <p></p>. */
 
-/* Above will not work since <header></header> is the first child of <article></article> and not <p></p>. */
+article p:first-child {
+  color: red;
+}
+
+/* Styling links */
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /* color: #777; */
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orange;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}

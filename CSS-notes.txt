@@ -174,10 +174,12 @@ user agent stylesheet - default style
 
 == CSS THEORY #1: Conflicts between Selectors ==
 Highest to Lowest Priority
-1. ID Selectors
+5. Declarations marked ! important        ----\  USUALLY
+4. Inline style (style attribute in HTML) ----/ NOT USED
+3. ID Selectors
 2. Class (.) or Pseudo-class (:) Selector
-3. Element Selector (p, div, li, etc.)
-4. Universal Selector (*)
+1. Element Selector (p, div, li, etc.)
+0. Universal Selector (*)
 
 +-----------------------------------+
 | In case of multiple declarations, |

@@ -164,3 +164,94 @@ a:active {
   background-color: black;
   font-style: italic;
 }
+
+-- DEVELOPER TOOLS --
+Elements declared below will be followed. BOTTOM-UP hierarchy.
+
+user agent stylesheet - default style
+:hover - can be used to see the element in different states
+
+
+== CSS THEORY #1: Conflicts between Selectors ==
+Highest to Lowest Priority
+5. Declarations marked " !important "     ----\  USUALLY
+4. Inline style (style attribute in HTML) ----/ NOT USED
+3. ID Selectors
+2. Class (.) or Pseudo-class (:) Selector
+1. Element Selector (p, div, li, etc.)
+0. Universal Selector (*)                 ----> applies to all elements
+
++-----------------------------------+
+| In case of multiple declarations, |
+|the LAST SELECTOR in code applies. |
++-----------------------------------+
+
++-----------------------------------------------------+
+| Least priority since it's just an element selector, |
+|but by using the !important keyword - it becomes the |
+|highest priority.                                    |
+|                                                     |
+| footer p {                                          |
+|   color: green !important;                          |
+| }                                                   |
++-----------------------------------------------------+
+
+For LINKS
+a:link - with pseudo-class has higher priority than just using "a" element as selector.
+
+** WRITE SELECTORS AS SIMPLE AS POSSIBLE **
+
+
+== CSS THEORY #2 INHERITANCE and UNIVERSAL SELECTOR ==
+
+Inheritance
+- style gets inherited from parent element to child element
+- body{} is the main parent
+
+
+== CSS BOX MODEL ==
+
+1. Content - contains text, images, etc.. (width/height can be specified thru CSS properties)
+2. Border - line around the element, still inside the element (around content)
+3. Padding - invisible white space around the content, inside the element (between the content and border)
+4. Margin - space outside the element, between elements. (outside padding)
+5. Fill area - area that gets filled with background color or background image. (content and padding until border)
+
+Content, Padding, and Border - visible parts of the element.
+
+
+** Element HEIGHT and WIDTH Calculation **
+
+FINAL ELEMENT WITDTH =  LEFT BORDER
+                      + LEFT PADDING
+                      + WIDTH
+                      + RIGHT PADDING
+                      + RIGHT BORDER
+
+FINAL ELEMENT HEIGHT =  TOP BORDER
+                      + TOP PADDING
+                      + HEIGHT
+                      + BOTTOM PADDING
+                      + BOTTOM BORDER
+
+- We can specify all these values using CSS properties.
+- This is the default behavior, but we can change it.
+
+Global reset
+* {
+  margin: 0;
+  padding: 0;
+}
+
++-----------------------+
+| padding-bottom: 50px; |
+| padding-top: 50px;    |
+|                       |
+|  Use shorthand:       |
+|  padding: 50px 0;     |
++-----------------------+
+
+When creating space, it's always good to use "margin-bottom"
+
+Collapsing Margins - when two (2) margins occupy the same space, only one of them is actually visible, and that's the larger one between the two.
+

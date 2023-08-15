@@ -207,3 +207,51 @@ a:link - with pseudo-class has higher priority than just using "a" element as se
 Inheritance
 - style gets inherited from parent element to child element
 - body{} is the main parent
+
+
+== CSS BOX MODEL ==
+
+1. Content - contains text, images, etc.. (width/height can be specified thru CSS properties)
+2. Border - line around the element, still inside the element (around content)
+3. Padding - invisible white space around the content, inside the element (between the content and border)
+4. Margin - space outside the element, between elements. (outside padding)
+5. Fill area - area that gets filled with background color or background image. (content and padding until border)
+
+Content, Padding, and Border - visible parts of the element.
+
+
+** Element HEIGHT and WIDTH Calculation **
+
+FINAL ELEMENT WITDTH =  LEFT BORDER
+                      + LEFT PADDING
+                      + WIDTH
+                      + RIGHT PADDING
+                      + RIGHT BORDER
+
+FINAL ELEMENT HEIGHT =  TOP BORDER
+                      + TOP PADDING
+                      + HEIGHT
+                      + BOTTOM PADDING
+                      + BOTTOM BORDER
+
+- We can specify all these values using CSS properties.
+- This is the default behavior, but we can change it.
+
+Global reset
+* {
+  margin: 0;
+  padding: 0;
+}
+
++-----------------------+
+| padding-bottom: 50px; |
+| padding-top: 50px;    |
+|                       |
+|  Use shorthand:       |
+|  padding: 50px 0;     |
++-----------------------+
+
+When creating space, it's always good to use "margin-bottom"
+
+Collapsing Margins - when two (2) margins occupy the same space, only one of them is actually visible, and that's the larger one between the two.
+

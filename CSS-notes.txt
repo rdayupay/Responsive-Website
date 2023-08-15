@@ -164,3 +164,22 @@ a:active {
   background-color: black;
   font-style: italic;
 }
+
+-- DEVELOPER TOOLS --
+Elements declared below will be followed. BOTTOM-UP hierarchy.
+
+user agent stylesheet - default style
+:hover - can be used to see the element in different states
+
+
+== CSS THEORY #1: Conflicts between Selectors ==
+Highest to Lowest Priority
+1. ID Selectors
+2. Class (.) or Pseudo-class (:) Selector
+3. Element Selector (p, div, li, etc.)
+4. Universal Selector (*)
+
++-----------------------------------+
+| In case of multiple declarations, |
+|the LAST SELECTOR in code applies. |
++-----------------------------------+

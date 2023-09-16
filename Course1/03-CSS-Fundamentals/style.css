@@ -5,11 +5,21 @@
   padding: 0;
 }
 
+/* PAGE SECTIONS */
 body {
   color: #444;
   font-family: sans-serif;
 
   border-top: 10px solid #1098ad;
+}
+
+/* Centering */
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* shorthand for margin auto */
+  margin: 0 auto;
 }
 
 .main-header {
@@ -19,6 +29,8 @@ body {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
+
+  /* height: 80px; */
 }
 
 nav {
@@ -40,8 +52,11 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
+
+  width: 500px;
 }
 
+/* SMALLER ELEMENTS */
 h1,
 h2,
 h3 {
@@ -86,6 +101,7 @@ ol {
 li {
   font-size: 20px;
   margin-bottom: 10px;
+  /* display: inline; */
 }
 
 li:last-child {
@@ -174,6 +190,27 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+
+  display: block; */
+
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
 }
 
 /* Resolving conflicts */

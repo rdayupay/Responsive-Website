@@ -237,7 +237,7 @@ FINAL ELEMENT HEIGHT =  TOP BORDER
 - We can specify all these values using CSS properties.
 - This is the default behavior, but we can change it.
 
-Global reset
+*** GLOBAL RESET ****
 * {
   margin: 0;
   padding: 0;
@@ -251,7 +251,7 @@ Global reset
 |  padding: 50px 0;     |
 +-----------------------+
 
-When creating space, it's always good to use "margin-bottom"
+--> When creating space, it's always good to use "margin-bottom" <--
 
 Collapsing Margins - when two (2) margins occupy the same space, only one of them is actually visible, and that's the larger one between the two.
 

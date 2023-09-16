@@ -255,3 +255,33 @@ FINAL ELEMENT HEIGHT =  TOP BORDER
 
 Collapsing Margins - when two (2) margins occupy the same space, only one of them is actually visible, and that's the larger one between the two.
 
+
+** Difference between Block Level Boxes and Inline Boxes: **
+
+->
+BLOCK LEVEL BOXES (or Elements) - occupy all the space they can (horizontally).
+                                - creates line breaks after them.
+                                - cannot be side by side with one another.
+                                -- formatted visually as blocks
+                                -- occupies 100% of parent element's width.
+                                -- stacked vertically by default.
+Default elements: most HTML elements
+body, main, header, footer, section, nav, aside, div, h1-h6, p, ul, ol, li, etc.
+
+You can change the CSS formatting to block level boxes using:
+With CSS: display: block
+
+->
+INLINE BOXES - occupies the exact space necessary for its content.
+             - no line-breaks before/after the element.
+             - heights and widths do not apply.
+             - paddings and margins are applied only "horizontally".
+Default elements: a, img, strong, em, button, etc.
+With CSS: display: inline
+
+->
+INLINE-BLOCK BOXES - looks line INLINE from the OUTSIDE, behaves like BLOCK-LEVEL on the INSIDE.
+                   - occupies only content's space
+                   - no line-breaks
+                   - box-model applies as showed (width, height, margins, paddings)
+display: inline-block

@@ -285,3 +285,35 @@ INLINE-BLOCK BOXES - looks line INLINE from the OUTSIDE, behaves like BLOCK-LEVE
                    - no line-breaks
                    - box-model applies as showed (width, height, margins, paddings)
 display: inline-block
+
+
+** POSITIONING **
+Normal flow - default positioning
+            - elements is "in flow"
+            - elements are laid out according to their order in the HTML code
+position: relative
+
+
+Absolute positioning - element is removed from the normal flow
+                     - "out of flow"
+                     - lose impact to surrounding elements, might overlap them
+                     - we use top, bottom, left, or right to offset the element from its relatively positioned container
+                     - will stay in place no matter what happens to the page (e.g., resizing or adding more elements)
+position: absolute
+top:
+left:
+
+// set "body" position to relative
+// use positioning for single elements only like the "Like" buttons
+
+
+** PSEUDO ELEMENTS **
+- elements that doesn't exist in HTML, but can still be styled in CSS.
+(e.g. first letter of a line/paragraphs)
+
+h1::first element {}
+
+Adjacent sibling - all the elements under a container element are called siblings, and the very next element is called the "adjacent sibling"
+
+h3 + p::first-line {}
+

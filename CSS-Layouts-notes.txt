@@ -1,0 +1,50 @@
+Layouts: Floats, Flexbox, and CSS Grid
+
+Layouts - the way text, images, and other content is placed and arranged on a webpage.
+        - visual structure, into which we place our content.
+
+Building a layout: arranging page elements into a visual structure, instead of simply having them placed one after another (normal flow)
+
+** 2 types of LAYOUT **
+1. PAGE layout
+2. COMPONENT layout - the smaller components inside a page layout
+
+
+** 3 WAYS OF BUIDING LAYOUTS W/ CSS **
+
+1. FLOAT LAYOUT - old way of building layout of all sizes.
+                - uses the float CSS property.
+                - still used, but getting outdated fast.
+
+  +--------------+
+  |    |    |    |
+  |--> |--> |--> |
+  |    |    |    |
+  +--------------+
+
+2. FLEXBOX - modern way of laying out elements in a 1-dimensional row w/o using floats.
+           - perfect for component layouts          
+
+ +-----------------------+
+ | +----+ +-----+ +----+ |
+ | |    | |     | |    | |
+ | |----|-|-----|-|--> | |
+ | |    | |     | |    | |
+ | +----+ +-----+ +----+ |
+ +-----------------------+
+
+3. CSS GRID - laying out for complete 2-dimensional grid
+            - perfect for big page layouts and complex components
+
+ +-----------------------+
+ |  +---------+  +----+  |
+ |  | +--->   |  |    |  |
+ |  +-|-------+  +----+  |  
+ |  +-|---+  +--------+  | 
+ |  | ↓   |  |        |  |
+ |  +-----+  +--------+  |
+ +-----------------------+
+
+
+<~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+USING FLOATS

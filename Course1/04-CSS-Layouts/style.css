@@ -16,7 +16,7 @@ body {
 
 /* Centering */
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   /* shorthand for margin auto */
@@ -26,7 +26,6 @@ body {
 
 .main-header {
   background-color: #f7f7f7;
-  background-color: red;
   /* padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
@@ -288,7 +287,6 @@ nav p {
 }
 
 .author {
-  /* padding-left: 80px; */
   float: left;
   margin-top: 10px;
   margin-left: 20px;
@@ -315,3 +313,17 @@ nav {
 /* .clearfix {
   display: flow-root;
 } */
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
+}

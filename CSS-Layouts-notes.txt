@@ -16,35 +16,74 @@ Building a layout: arranging page elements into a visual structure, instead of s
                 - uses the float CSS property.
                 - still used, but getting outdated fast.
 
-  +--------------+
+  +----+----+----+
   |    |    |    |
   |--> |--> |--> |
   |    |    |    |
-  +--------------+
+  +----+----+----+
 
 2. FLEXBOX - modern way of laying out elements in a 1-dimensional row w/o using floats.
            - perfect for component layouts          
 
- +-----------------------+
- | +----+ +-----+ +----+ |
- | |    | |     | |    | |
- | |----|-|-----|-|--> | |
- | |    | |     | |    | |
- | +----+ +-----+ +----+ |
- +-----------------------+
+ +---------------------------+
+ |  +----+  +-----+  +----+  |
+ |  |    |  |     |  |    |  |
+ |  |----|--|-----|--|--> |  |
+ |  |    |  |     |  |    |  |
+ |  +----+  +-----+  +----+  |
+ +---------------------------+
 
 3. CSS GRID - laying out for complete 2-dimensional grid
             - perfect for big page layouts and complex components
 
- +-----------------------+
- |  +---------+  +----+  |
- |  | +--->   |  |    |  |
- |  +-|-------+  +----+  |  
- |  +-|---+  +--------+  | 
- |  | ↓   |  |        |  |
- |  +-----+  +--------+  |
- +-----------------------+
+ +-------------------------+
+ |  +----------+  +-----+  |
+ |  | +--->    |  |     |  |
+ |  +-|--------+  +-----+  |  
+ |  +-|---+  +----------+  | 
+ |  | ↓   |  |          |  |
+ |  +-----+  +----------+  |
+ +-------------------------+
 
 
-<~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
-USING FLOATS
+
+FLOATS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+{
+float: left
+margin-bottom: xx
+}
+
+*Use margins instead of padding since we want space OUTSIDE the element.
+
+*When the children elements are put into "float", the parent element will COLLAPSE since it has no more elements inside. It will only retain the height/padding if declared.
+
+
+* Absolute positioning VS Floats *
+
+Absolute positioning                                    
+- out of flow                                           
+- no impact on surrounding                              
+- will based on the relative positioned container
+
+Floats
+- out of flow
+- text/inline elements will wrap around the floated element
+- will impact surrounding elements
+- container element will not adjust its height to the floated element
+
+For collapsing height:
+add "clearfix" as class of the parent element in html.
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+The BOX MODEL w/ BOX-SIZING
+box-sizing- border-box
+
+Normal Box model - final element width = right border + right padding + width + left padding + left border
+
+Box sizing - final element width = defined width
+(paddings and borders will not be added to the dimension since it will already be included in the final length of box)

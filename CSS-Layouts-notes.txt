@@ -190,3 +190,22 @@ FLEXBOX TERMINOLOGY
 +------------------------------------------------+
 
 2.6 order: 0 | <integer>    -controls order of items. -1 makes item first, 1 makes it last
+
+
+!!!This is not advisable!!!
+By default, flex-shrink is 1 (shrink element).
+If flex-basis is too large of a space (horizontally), flexbox is allowed to shrink elements to fit the container.
+To combat shrinking, put flex-shrink to 0. This will follow the length of flex-basis.
+
+Flex-grow: 1; will make the elements fill out the whole container, divided equally.
+-Turn off flex-basis to see difference.
+-You can use this in parent and child elements.
+-If you declare flex-grow: 2; in another child element, it will grow bigger by getting the amount of the available space.
+-Flex-grow: 1; is usually used.
+
+Flex property shorthand
+-flex: 1; is usually used, not flex-grow: 1;
+-always use the shorthand property flex: 0 0 200px; and not the three individually.
+
+
+

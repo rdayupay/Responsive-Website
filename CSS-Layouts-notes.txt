@@ -207,5 +207,8 @@ Flex property shorthand
 -flex: 1; is usually used, not flex-grow: 1;
 -always use the shorthand property flex: 0 0 200px; and not the three individually.
 
-
+Links
+-never forget to use the link pseudo-class " :link "
+-are inline elements where margin-bottom and margin-top do not apply.
+-to fix this, display it as block {display: block;}
 

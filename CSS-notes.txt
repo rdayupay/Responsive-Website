@@ -140,6 +140,8 @@ Since <header></header> is the first child of <article></article> and not <p></p
 *-- Styling LINKS --*
 Using Pseudo-class, this will target actual links.
 
+!!! NEVER FORGET THE LINK PSEUDO-CLASS :link !!!
+
 +---------------------------------------------+
 | LINK SHOULD BE DEFINED IN THIS ORDER (LVHA) |
 +---------------------------------------------+

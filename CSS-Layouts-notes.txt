@@ -348,3 +348,26 @@ Explicit row - explicitly defined the sizes {grid-template-rows: 300px 200px;}
 Always define an explicit grid using:
 grid-template-columns:
 grid-template-rows:
+
+Placing items in a particular grid:
+{
+grid-column: 2 / 3;
+grid-row: 1 / 2;
+}
+
+- if the grid line is just one line higher, you can ommit the 2nd number.
+{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+- start at 1 and span across 3 cells
+{
+  grid-column: 1 / span 3;
+}
+- same as 1 / 4;
+
+- span until the end of container
+{
+  grid-column: 1 / -1;
+}

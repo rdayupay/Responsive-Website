@@ -212,3 +212,30 @@ Links
 -are inline elements where margin-bottom and margin-top do not apply.
 -to fix this, display it as block {display: block;}
 
+
+
+CSS-GRID
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+-most modern way of building layouts
+-most complete and the easiest to use
+- GRID CONTAINER and GRID ITEMS
+
+{
+  display: grid;
+}
+
+grid-template-columns:
+                       -used to generate columns..
+                       -if a column has a defined height, the entire row will stretch to the tallest column.
+                       -can be used to give columns its width.
+
+grid-template-rows:
+                    -can be used to give rows its height.
+                    -if an element has its own defined height, it will not stretch.
+
+gap can still be used.
+
+What GRID CAN do that FLEXBOX CANNOT.
+- define separate values for columns and rows.
+column-gap:
+row-gap:

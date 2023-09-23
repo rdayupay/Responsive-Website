@@ -323,3 +323,28 @@ or
     align-self: stretch | start | center | end
 
     - overwrite justify-items/align-items for single items
+
+
+Use of "fr"
+{ex. grid-template-columns: 10px 2fr 1fr 1fr;}
+- will let the content occupy the remaining space within the container.
+- will let the content expand left to right if the webpage is pulled.
+- but if its pushed too small, the grid will still overflow its content from the container if there's an element with a defined width.
+- 1fr, 2f, 3fr, ...
+
+Use of "repeat"
+{grid-template-columns: repeat(4, 1fr);}
+- this will allow the grid to have 4 columns of 1fr.
+
+Use of "auto"
+{grid-template-columns: 1fr 1fr 1fr auto}
+{grid-template-rows: 1fr auto;}
+- auto will only take the necessary space for its content and does not expand.
+
+Implicit row - rows added automatically because the grid ran out of space for its contents
+             - ex. if there are only 2 rows with 3 columns, but there are 8 child elements, the 2 will create a new row below.
+Explicit row - explicitly defined the sizes {grid-template-rows: 300px 200px;}
+
+Always define an explicit grid using:
+grid-template-columns:
+grid-template-rows:

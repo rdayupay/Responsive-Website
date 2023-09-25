@@ -1,0 +1,129 @@
+Semantic HTML quick notes
+<span> </span> - used for short text
+<section> </section> - used to section rows with no meaning, but not using <div>
+<blockquote> </blockquote> - for writing testimonials, etc..
+
+
+Web Design vs Development
+Web Designers - create overall look and feel of website
+Web Developers - implement design using HTML, CSS and JavaScript code
+
+
+== Web Design INGREDIENTS ==
+
+1. Typography - formatting and designing text
+2. Colors
+3. Images/Illustrations
+4. Icons
+5. Shadows
+6. Border-radius - roundness of elements in the page
+7. Whitespace
+8. Visual Hierarchy
+9. User Experience
+10. Components/Layout
+
++--------------------------------------+
+| Design deciions for each ingredients |
+| are based on WEBSITE PERSONALITY.    |
++--------------------------------------+
+
+
+== WEBSITE PERSONALITIES ==
+
+1. Serious/Elegant - convey luxury and elegance
+                   - based on thin serif typrfaces
+                   - golden or pastel colors
+                   - big high-quality images
+
+2. Minimalist/Simple - focusses on the important text content
+                     - uses small/medium-sized sans-serif black text
+                     - uses some lines
+                     - few images and small icons
+
+3. Plain/Neutral - design that gets out of the way by using neutral and small typefaces
+                 - very structured layout
+                 - common in big corporations
+
+4. Bold/Confident - makes an impact by featuring big and bold typography
+                  - paired with big and bright colored blocks
+
+5. Calm/Peaceful - for products/services that care
+                 - calm pastel colors
+                 - soft serif headings
+                 - matching images/illustrations
+
+6. Startup/Upbeat - widely used in startups
+                  - medium-sized sans-serif typefaces
+                  - light-grey text and backgrounds
+                  - rounded elements
+
+7. Playful/Fun - colorful and round Designers
+               - fueled by creative elements like hand-drawn icons/illustrations
+               - lots of animations and fun language
+
+
+== INGREDIENTS ==
+
+WEB DESIGN RULES #1: TYPOGRAPHY
+- most important design ingredient and with most rules
+
+Typography - making text beautiful and easy to read
+
+SERIF vs SANS-SERIF
+Serif
+- has details at the end of line that looks like tails and called "serif" typeface
+- creates a traditional/classic look and feel
+- converys trustworthiness
+- good for long text
+
+Sans-serif
+- doesn't have the decorative tails
+- modern look and feel
+- clean and simple
+- easier to choose for beginner designer
+
+
+RULES
+- USE GOOD TYPEFACES
+
+1. Use only good and popular typefaces and play it safe
+SANS-SERIF typefaces: Inter, Open Sans, Roboto, Montserrat, Work Sans, Lato
+SERIF typefaces: Merriweather, Aleo, Playfair Display, Cormorant, Cardo, Lora
+
+Toolbox: google fonts, font squirrel
+
+2. It’s okay to use just one typeface per page! If you want more, limit to 2 
+typefaces
+
+3. Choose the right typeface according to your website personality
+
+- USE GOOD FONT SIZES AND WEIGHTS
+
+4. When choosing font-sizes, limit choices! Use a “type scale” tool or other 
+pre-defined range
+
+5. Use a font size between 16px and 32px for “normal” text
+
+6. For long text (like a blog post), try a size of 20px or even bigger
+
+7. For headlines, you can go really big (50px+) and bold (600+), depending 
+on personality
+
+8. For any text, don’t use a font weight under 400 (regular)
+
+- CREATE A GOOD READING EXPERIENCE
+
+9. Use less than 75 characters per line
+
+10. For normal-sized text, use a line height between 1.5 and 2. For big text, go 
+below 1.5
+
+11. Decrease letter spacing in headlines, if it looks unnatural (this will come 
+from experience)
+
+12. Experiment with all caps for short titles. Make them small and bold and 
+increase letter-spacing
+
+13. Usually, don’t justify text
+
+14. Don’t center long text blocks. Small blocks are fine

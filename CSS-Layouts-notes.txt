@@ -212,3 +212,189 @@ Links
 -are inline elements where margin-bottom and margin-top do not apply.
 -to fix this, display it as block {display: block;}
 
+
+
+CSS-GRID
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+-most modern way of building layouts
+-most complete and the easiest to use
+- GRID CONTAINER and GRID ITEMS
+Create a grid container
+{
+  display: grid;
+}
+
+grid-template-columns: num num num;
+                       -used to generate columns..
+                       -if a column has a defined height, the entire row will stretch to the tallest column.
+                       -can be used to give columns its width.
+
+grid-template-rows: num num;
+                    -can be used to give rows its height.
+                    -if an element has its own defined height, it will not stretch.
+
+gap can still be used.
+
+What GRID CAN do that FLEXBOX CANNOT.
+- define separate values for columns and rows.
+column-gap:
+row-gap:
+
+CSS GRID
+- set of css properties for building 2-dimensional layouts
+- main idea is to divide the container element with rows and columns and fill with its child elements
+- be able to write less nested HTML and easier to read CSS
+- not meant to replace flexbox! They work together. 1D layout for flexbox. 2D for css grid.
+
+
+CSS GRID TERMINOLOGY
+
+1. Grid Container - main element {display: grid;}
+
+2. Grid Items - grid container child elements
+
+3. Row Axis → & Column Axis ↓  -cannot be changed
+
+4. Grid Lines - lines that divide the grid and separate the columns and rows
+              - numbered from 1 to number of columns+1 and the number of rows+1
+              - this is important if you want to place an item at a particular place
+
++---+---+---+   - 4 grid lines for the columns
+|   |   |   |   - 2 grid lines for rows
++---+---+---+
+
+5. Grid Cells - the intersection box which are made by grid lines where you can place the items
+              - might be filled by a grid item or not
+              - these are always created, but need not to always be filled.
+
++---+
+|   |
++---+
+
+6. Gutters (or Gap) - spaces betweem grid items.
+gap:
+column-gap:
+row-gap:
+
+7. Grid Track - can be a row/column
+              - row tracks or column tracks
+
++---+---+---+   - 2 row tracks
+|   |   |   |   - 3 column tracks
++---+---+---+
+|   |   |   |
++---+---+---+
+
+
+1. GRID CONTAINER
+
+1.1 grid-template-rows: <track size>*
+    grid-template-columns: <track size>*
+                                          -to establish grid row/columns.
+                                          -one length unit for each track.
+                                          -any unit can be used, new fr fills unused space.
+
+1.2 row-gap: 0 | <length>       
+    column-gap: 0 | <length>
+or
+    gap: 0 | <length>         -to create empty space between tracks
+
+1.3 justify-items: stretch | start | center | end
+    align-items: stretch | start | center | end
+    
+    - to align items inside rows/columns (horizontally/vertically)
+
+1.4 justify-content: start | start | center | end | ...
+    align-content: start | start | center | end | ...
+
+    - align entire grid inside grid container.
+    - only applies if container is larger than the grid.
+
+    - justify-content (horizontal)
+    - align-content (verticcal)
+
+
+2. GRID ITEMS
+
+2.1 grid-column: <start line> / <end line> | span <number>
+    grid-row: <start line> / <end line> | span <number>
+
+    - to place a grid item into a specific cell, based on line numbers.
+    - span keyword can be used to span an item across more cells.
+
+2.2 justify-self: stretch | start | center | end
+    align-self: stretch | start | center | end
+
+    - overwrite justify-items/align-items for single items
+
+
+!!! ADDITIONAL NOTES !!!
+
+Use of "fr"
+{ex. grid-template-columns: 10px 2fr 1fr 1fr;}
+- will let the content occupy the remaining space within the container.
+- will let the content expand left to right if the webpage is pulled.
+- but if its pushed too small, the grid will still overflow its content from the container if there's an element with a defined width.
+- 1fr, 2f, 3fr, ...
+
+Use of "repeat"
+{grid-template-columns: repeat(4, 1fr);}
+- this will allow the grid to have 4 columns of 1fr.
+
+Use of "auto"
+{grid-template-columns: 1fr 1fr 1fr auto}
+{grid-template-rows: 1fr auto;}
+- auto will only take the necessary space for its content and does not expand.
+
+Implicit row - rows added automatically because the grid ran out of space for its contents
+             - ex. if there are only 2 rows with 3 columns, but there are 8 child elements, the 2 will create a new row below.
+Explicit row - explicitly defined the sizes {grid-template-rows: 300px 200px;}
+
+Always define an explicit grid using:
+grid-template-columns:
+grid-template-rows:
+
+Placing items in a particular grid:
+- start at the 2nd grid line and end at 3rd grid line.
+{
+grid-column: 2 / 3;
+grid-row: 1 / 2;
+}
+
+- if the grid line is just one line higher, you can ommit the 2nd number/end.
+{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+- start at 1 and span across 3 cells
+{
+  grid-column: 1 / span 3;
+}
+- same as 1 / 4;
+
+- span until the end of container
+{
+  grid-column: 1 / -1;
+}
+
+*align-content - aligns the items inside the container.
+*align-items - align the items inside the cell.
+
+*justify will move items horizontally.
+*align will move items vertically.
+
+*properties that ends with "-content" move things inside the container.
+e.g. align-content, justify-content
+*properties ending with "-items" will align things inside the cell.
+e.g. align-items, justify-items
+- both are container property
+
+*"-self"
+- this will override "-items"
+- should be applied to a "child element"
+- used for individual items
+
+*remove individual margins and just add row-/column-gap in the container element.
+
+*declare only the "grid-template-column" and let CSS grid arrange for the rows.

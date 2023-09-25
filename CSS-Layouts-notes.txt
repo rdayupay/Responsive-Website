@@ -394,3 +394,7 @@ e.g. align-items, justify-items
 - this will override "-items"
 - should be applied to a "child element"
 - used for individual items
+
+*remove individual margins and just add row-/column-gap in the container element.
+
+*declare only the "grid-template-column" and let CSS grid arrange for the rows.

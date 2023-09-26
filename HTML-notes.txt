@@ -61,3 +61,5 @@ Eliminate the use of generic divs by using..
 <footer></footer>
 <p></p>
 <button></button>
+
+<figure></figure> - can be used for carts instead of <article></article>

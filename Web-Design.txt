@@ -64,7 +64,7 @@ Web Developers - implement design using HTML, CSS and JavaScript code
 
 == INGREDIENTS ==
 
-==> WEB DESIGN RULES #1: TYPOGRAPHY
+==> WEB DESIGN RULES #1: TYPOGRAPHY <==
 - most important design ingredient and with most rules
 
 Typography - making text beautiful and easy to read
@@ -129,7 +129,7 @@ increase letter-spacing
 14. Don’t center long text blocks. Small blocks are fine
 
 
-==> WEB DESIGN RULES #2: COLORS
+==> WEB DESIGN RULES #2: COLORS <==
 
 -CHOOSE THE RIGHT COLOR
 
@@ -190,5 +190,50 @@ Toolbox: coolors
 Contrast ratio: 13:1, 5.1:1
 
 
+==> WEB DESIGN RULES #3: IMAGES AND ILLUSTRATIONS <==
 
+- USE GOOD IMAGES
+
+1. Different types of images: product photos, storytelling photos, 
+illustrations, patterns
+
+2. Use images to support your website’s message and story. So only use 
+relevant images!
+
+3. Prefer original images. If not possible, use original-looking stock images 
+(not generic ones!)
+
+Toolbox: Unsplash, Pexels, DrawKit, unDraw
+
+- USE IMAGES WELL
+
+4. Try to show real people to trigger user’s emotions
+
+5. If necessary, crop images to fit your message
+
+6. Experiment combining photos, illustrations and patterns
+
+- HANDLING TEXT ON IMAGES
+
+7. Method #1: Darken or brighten image (completely or partially, using a 
+gradient)
+
+8. Method #2: Position text into neutral image area
+
+9. Method #3: Put text in a box
+
+- SOME TECHNICAL DETAILS
+
+10. To account for high-res screens, make image dimensions 2x as big as 
+their displayed size
+*Scale factor: actual pixels the screen contains / Pixels represented on screen
+*On high-res screens, scale factor is 2x or even 3x, on "normal" screens it's just 1x (1 physical pixel = 1 design pixel)
+
+600x600px will look 300x300px on high-res screen
+
+11. Compress images for a lower file size and better performance
+Toolbox: Squoosh (reduce file size by 96%)
+
+12. When using multiple images side-by-side, make sure they have the exact 
+same dimensions
 

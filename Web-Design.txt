@@ -64,7 +64,7 @@ Web Developers - implement design using HTML, CSS and JavaScript code
 
 == INGREDIENTS ==
 
-WEB DESIGN RULES #1: TYPOGRAPHY
+==> WEB DESIGN RULES #1: TYPOGRAPHY
 - most important design ingredient and with most rules
 
 Typography - making text beautiful and easy to read
@@ -127,3 +127,68 @@ increase letter-spacing
 13. Usually, don’t justify text
 
 14. Don’t center long text blocks. Small blocks are fine
+
+
+==> WEB DESIGN RULES #2: COLORS
+
+-CHOOSE THE RIGHT COLOR
+
+1. Make the main color match your website’s personality: colors convey 
+meaning!
+Red - power, passion, excitement
+Orange - less agressive, happiness, cheerfulness, creativity
+Yellow - joy, brightness, intelligence
+Green - harmony, nature, growth, health
+Blue - peace, trustworthiness, professionalism
+Purple - wealth, wisdom, magic
+Pink - romance, care, affection
+Brown - nature, comfort, durability
+Black - power, elegance, minimilasim, grief, sorrow
+
+2. Use a good color tone! Don’t choose a random tone or CSS named colors.
+Toolbox: OC- Open color, Tailwind CSS, FLAT UI Colors 2
+
+- ESTABLISH A COLOR SYSTEM
+
+3. You need at least two types of colors in your color palette: a main color 
+and a grey color
+Main color - primary color
+Grey color - for text, darker shades
+
+4. With more experience, you can add more colors: accent (secondary) 
+colors (use a tool)
+Accent - secondary color that blends well with main, use Toolbox
+Toolbox: Palleton.com, coolors
+
+5. For diversity, create lighter and darker “versions” (tints and shades)
+Tint - lighter version of color
+Shades - darker version
+Toolbox: Tint & Shade Generator
+
+- WHEN AND HOW TO USE COLORS
+
+6. Use your main color to draw attention to the most important elements on 
+the page
+Buttons - uses main color to draw attention, logo uses it too
+
+7. Use colors to add interesting accents or make entire components or 
+sections stand out
+
+8. You can try to use your color strategically in images and illustrations 
+
+- COLORS AND TYPOGRAPHY
+
+9. On dark colored backgrounds, try to use a tint of the background (“lighter 
+version”) for text
+
+10. Text should usually not be completely black. Lighten if up it looks heavy 
+and uninviting
+
+11. Don’t make text too light! Use a tool to check contrast between text and 
+background colors
+Toolbox: coolors
+Contrast ratio: 13:1, 5.1:1
+
+
+
+

@@ -340,3 +340,36 @@ Click (smaller shadow - pushing)
 Shadows don't always have to be black
 
 *Light source should be coming down from the top
+
+
++------------------------------------+
+| WEB DESIGN RULES #6: BORDER-RADIUS |
++------------------------------------+
+
+{border-radius: 12px; }
+
+//remove radius on specific corners
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+*you can use {border-radius: 100px} to make it round
+
+- USE BORDER-RADIUS WELL
+
+1. Use border-radius to increase the playfulness and fun of the design, to 
+make it less serious
+
+Serious/Elegant (less border-radius)
+Playful/Fun (more border-radius)
+
+2. Typefaces have a certain roundness: make sure that border-radius 
+matches that roundness!
+
+*Very round typeface, lots of border-radius in button, icons and image
+*Boxy/squared typesface, but designers wanted to add some playfulness, so little border-radius
+
+3. Use border-radius on buttons, images, around icons, standout sections 
+and other elements
+

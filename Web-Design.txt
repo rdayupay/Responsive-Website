@@ -248,6 +248,8 @@ same dimensions
 | WEB DESIGN RULES #4: ICONS |
 +----------------------------+
 
+copy svg code and paste to HTML file
+
 - USE GOOD ICONS
 
 1. Use a good icon pack, there are tons of free and paid icons packs
@@ -291,3 +293,50 @@ enclose them in a shape
 !! ICON NOTES !!
 Stroke: #color; - used for outline icons
 Fill: #color; - used for solid icons
+
+
++------------------------------+
+| WEB DESIGN RULES #5: SHADOWS |
++------------------------------+
+
+{box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);}
+{text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);}
+
+2011->
+Skeuomorphic design (w/ shadows) -> Flat design (minimal) -> Flat design 2.0 (brings back shadows and depth)
+
+Shadows - creates depth (3D)
+
+- USE SHADOWS WELL
+
+1. You don’t have to use shadows! Only use them if it makes sense for the 
+website personality
+
+*Serious/Elegant (less shadows)
+*Playful/Fun (more shadows)
+
+2. Use shadows in small doses: don’t add shadows to every element!
+
+3. Go light on shadows, don’t make them too dark!
+
+- USE SHADOWS IN THE RIGHT SITUATION
+
+4. Use small shadows for smaller elements that should stand out (to draw 
+attention)
+
+5. Use medium-sized shadows for larger areas that should stand out a bit 
+more
+
+6. Use large shadows for elements that should really float above the 
+interface
+
+7. Experiment with changing shadows on mouse interaction (click and hover)
+
+Normal (no shadow)
+Hover (Medium-sized shadow - pulling )
+Click (smaller shadow - pushing)
+
+8. Bonus: Experiment with glows (colored shadows)
+Shadows don't always have to be black
+
+*Light source should be coming down from the top

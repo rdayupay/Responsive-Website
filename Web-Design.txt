@@ -64,7 +64,9 @@ Web Developers - implement design using HTML, CSS and JavaScript code
 
 == INGREDIENTS ==
 
-==> WEB DESIGN RULES #1: TYPOGRAPHY <==
++---------------------------------+
+| WEB DESIGN RULES #1: TYPOGRAPHY |
++---------------------------------+
 - most important design ingredient and with most rules
 
 Typography - making text beautiful and easy to read
@@ -129,7 +131,9 @@ increase letter-spacing
 14. Don’t center long text blocks. Small blocks are fine
 
 
-==> WEB DESIGN RULES #2: COLORS <==
++-----------------------------+
+| WEB DESIGN RULES #2: COLORS |
++-----------------------------+
 
 -CHOOSE THE RIGHT COLOR
 
@@ -190,7 +194,9 @@ Toolbox: coolors
 Contrast ratio: 13:1, 5.1:1
 
 
-==> WEB DESIGN RULES #3: IMAGES AND ILLUSTRATIONS <==
++-----------------------------------------------+
+| WEB DESIGN RULES #3: IMAGES AND ILLUSTRATIONS |
++-----------------------------------------------+
 
 - USE GOOD IMAGES
 
@@ -237,3 +243,51 @@ Toolbox: Squoosh (reduce file size by 96%)
 12. When using multiple images side-by-side, make sure they have the exact 
 same dimensions
 
+
++----------------------------+
+| WEB DESIGN RULES #4: ICONS |
++----------------------------+
+
+- USE GOOD ICONS
+
+1. Use a good icon pack, there are tons of free and paid icons packs
+Toolbox: Phosphor icons, ionicons, ICONS8
+
+2. Use only one icon pack. Don’t mix icons from different icon packs
+
+3. Use SVG icons or icon fonts. Don’t use bitmap image formats (.jpg and 
+.png)!
+*Vector-based - svg images and icon fonts.
+- scale indefinitely!
+*Bitmap - "regular images": JPG, PNG, GIF
+- do not scale, become unsharp!
+
+4. Adjust to website personality! Roundness, weight and filled/outlined 
+depend on typography
+
+- WHEN TO USE ICONS
+
+5. Use icons to provide visual assistance to text
+
+6. Use icons for product feature blocks
+
+7. Use icons associated with actions, and label them (unless no space or 
+icon is 100% clear)
+
+8. Use icons as bullet points
+
+- USE ICONS WELL
+
+9. To keep icons neutral, use same color as text. To draw more attention, 
+use different color 
+
+10. Don’t confuse your users: icons need to make sense and fit the text or 
+action!
+
+11. Don't make icons larger than what they were designed for. If needed, 
+enclose them in a shape
+
+
+!! ICON NOTES !!
+Stroke: #color; - used for outline icons
+Fill: #color; - used for solid icons

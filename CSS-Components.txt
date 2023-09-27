@@ -108,3 +108,51 @@ CSS notes:
 {
   transform: scale(1.5);
 }
+
+>> Working with BUTTONS
+- for buttons, always remove the default border {border: none;}
+- remove from flex container by {position: absolute;} -> completely out of the flow of the page
+.btn {
+  border: none;
+  width:
+  height:
+  position: absolute;
+}
+
+> Centering buttons
+- first is set {top: 50%} to move the element by 50% of the parent container's height
+- then use {transform: translate(0, -50%)} which moves again the element back by 50% of the actual element's height
+- translate moves the element around, 0 means ignore the X (horizontal) value (x, y)
+.btn--left {
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+> Why not use flexbox to center?
+- sometimes we don't want to use flex property for this due to gaps, this might not work
+- we want this to be position absolute (outside the container)
+- we want to use translate horizontally (technique)
+- we want this to place outside the container, impossible to work with flexbox
+
+> Centering buttons outside the container, center of border
+.btn--left {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+>> Working with Dots
+- for empty space, put "$nbsp;" as a placeholder
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 32px);
+}
+
+>> Padding shorthand with 4 values
+padding: top right bottom left;
+{
+  padding: 32px 48px 32px 86px;
+}

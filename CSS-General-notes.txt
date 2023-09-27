@@ -245,6 +245,9 @@ FINAL ELEMENT HEIGHT =  TOP BORDER
   padding: 0;
 }
 
+- first value is top/bottom
+- second value is left/right
+- if 4 values -> padding: top right bottom left;
 +-----------------------+
 | padding-bottom: 50px; |
 | padding-top: 50px;    |

@@ -183,3 +183,13 @@ Semantic table - not usually used, but nice to know.
   </tbody>
 </table>
 
+- if two borders are near each other, you can make it collapse to combine
+{
+  border-collapse: collapse;
+}
+
+- make the width of each table head equal 100/4=25
+{
+  width: 25%;
+}
+

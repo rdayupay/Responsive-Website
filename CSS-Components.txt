@@ -85,3 +85,11 @@ D. LAYOUT PATTERNS
 7. Multi-column/magazine
 8. Asymmetry/Experimental
 
+
+== ACCORDION ==
+1. create the accordion as main container and add items as child elements
+2. Choose 1 item and design with flexbox and grid
+3. Create copies of the item
+4. Temporarily add {display: none;} to the hidden box class to hide content like closing
+5. Create a new class beside items (open), use this to show the hidden box for this particular item
+6. Use {display: block;} to show the content as if it's open

@@ -58,7 +58,11 @@
       .text {
         font-size: 24px;
         font-weight: 500;
-        color: #087f5b;
+        /* color: #087f5b; */
+      }
+
+      .number {
+        color: #ced4da;
       }
 
       .icon {
@@ -69,6 +73,7 @@
 
       .hidden-box {
         grid-column: 2;
+        display: none;
       }
 
       .hidden-box p {
@@ -85,9 +90,19 @@
         gap: 12px;
       }
 
-      /* .hidden-box li {
-        margin-bottom: 12px;
-      } */
+      /* OPEN STATE */
+      .open {
+        border-top: 4px solid #087f5b;
+      }
+
+      .open .hidden-box {
+        display: block;
+      }
+
+      .open .number,
+      .open .text {
+        color: #087f5b;
+      }
     </style>
   </head>
 
@@ -130,7 +145,7 @@
         </div>
       </div>
 
-      <div class="item">
+      <div class="item open">
         <p class="number">02</p>
         <p class="text">How long do I have to return my chair?</p>
         <svg

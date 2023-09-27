@@ -1,0 +1,87 @@
+== COMPONENTS AND LAYOUT PATTERNS ==
+
++--------------------------------------------------------+
+| WEB DESIGN RULES #10 - PART 1: ELEMENTS AND COMPONENTS |
++--------------------------------------------------------+
+
+- From ELEMENTS to WEBPAGE
+
+Step 1: Start with common ELEMENTS (paragraph, images, buttons).
+Step 2: Assemble elements into common COMPONENTS (feature card, pricing table, tab component).
+Step 3: Take all the component and use to build a LAYOUT using common layout PATTERNS.
+Step 4: Take all the smaller layouts or one big layout and assemble a final WEBPAGE from them.
+
+ELEMENTS -> COMPONENTS -(patterns)-> LAYOUTS -> WEBPAGE
+
+1. Use common elements and components to convey your website’s 
+information
+
+2. Combine components into layouts using common layout patterns
+*can be repeating components a couple of times
+
+3. Assemble different layout areas into a complete, final page
+
+
+- GALLERY INDEX: ELEMENTS, SECTIONS, PATTERNS -
+
+A. ELEMENTS
+1. Text
+2. Buttons
+3. Images
+4. Input elements
+5. Tags
+
+B. COMPONENTS
+1. Breadcrumbs
+-help users navigate complex sites
+2. Pagination
+3. Alert and status bars
+-small components that appear
+4. Statistics
+5. Gallery
+6. Feature box
+-groups together information
+7. Preview and profile cards
+-similar to feature box, but contains data points or things to preview
+8. Accordion
+-hiding content and display it once users click
+-mostly used for FAQs
+9. Tabs
+-product features
+-contains large data
+10. Carousel
+-multiple pieces of content at the same area
+-also called a "slider"
+11. Customer testimonials
+-most important pieces for some websites to sell
+-you can use carousel for testimonials
+12. Customer logos
+13. Featured-in logos
+-social proof where product was featured
+14. Steps
+-can show how service/product works
+15. Forms
+-login/signup forms are included
+16. Tables
+-display tabular data
+17. Pricing tables
+18. Modal windows
+-allows user to sign-in/signup
+
+C. SECTION COMPONENTS
+1. Navigation
+2. Hero section
+3. Footer
+4. Call-to-action section
+5. Feature row
+
+D. LAYOUT PATTERNS
+1. Row of boxes or cards
+2. Grid of boxes or cards
+3. Z-pattern
+4. F-Pattern
+5. Single-column
+6. Sidebar
+7. Multi-column/magazine
+8. Asymmetry/Experimental
+

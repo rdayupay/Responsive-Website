@@ -93,3 +93,18 @@ D. LAYOUT PATTERNS
 4. Temporarily add {display: none;} to the hidden box class to hide content like closing
 5. Create a new class beside items (open), use this to show the hidden box for this particular item
 6. Use {display: block;} to show the content as if it's open
+
+CSS notes:
+- rotate axis by 90 degrees
+{
+  flex-direction: column;
+}
+
+
+== CAROUSEL ==
+
+CSS notes:
+- adjust image size
+{
+  transform: scale(1.5);
+}

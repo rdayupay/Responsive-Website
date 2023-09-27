@@ -81,7 +81,7 @@ add "clearfix" as class of the parent element in html.
 }
 
 The BOX MODEL w/ BOX-SIZING
-box-sizing- border-box
+box-sizing: border-box;
 
 Normal Box model - final element width = right border + right padding + width + left padding + left border
 

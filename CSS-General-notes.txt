@@ -253,6 +253,18 @@ FINAL ELEMENT HEIGHT =  TOP BORDER
 |  padding: 50px 0;     |
 +-----------------------+
 
+-margin can be used to center element-
+.class {
+  width: 700px;
+  margin: 100px auto;
+}
+
+-you can reset line height in the body
+body {
+  line-height: 1;
+}
+
+
 --> When creating space, it's always good to use "margin-bottom" <--
 
 Collapsing Margins - when two (2) margins occupy the same space, only one of them is actually visible, and that's the larger one between the two.

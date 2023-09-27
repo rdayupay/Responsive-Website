@@ -196,6 +196,7 @@ FLEXBOX TERMINOLOGY
 By default, flex-shrink is 1 (shrink element).
 If flex-basis is too large of a space (horizontally), flexbox is allowed to shrink elements to fit the container.
 To combat shrinking, put flex-shrink to 0. This will follow the length of flex-basis.
+!!!
 
 Flex-grow: 1; will make the elements fill out the whole container, divided equally.
 -Turn off flex-basis to see difference.
@@ -211,6 +212,40 @@ Links
 -never forget to use the link pseudo-class " :link "
 -are inline elements where margin-bottom and margin-top do not apply.
 -to fix this, display it as block {display: block;}
+
+
+**** for unordered list (ul) - using FLEX-DIRECTION: COLUMN;
+You can use {flex-direction: column;} to change the axis of the flex container
+- this will make the list position right after the other instead of beside each other.
+- {gap: 10px;} will also change direction
+- rotate everything by 90 degrees
+- main axis is vertical
+- cross-axis is now horizontal
+
+(USING FLEX-DIRECTION: COLUMN;) - vertical main axis ↓
+.container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+RESULT: ↓
+1
+2
+3
+4
+
+(DEFAULT) - horizontal main axis →
+.container {
+  display: flex;
+  gap: 12px;
+}
+RESULT: →
+1 2 3 4
+
+-> WITH FLEX-DIRECTION SET TO COLUMN:
+- align-items aligns items horizontally, no longer vertically
+- justify-content aligns items vertically, no longer horizontally
+- gap acts like margin-bottom, no longer like margin-right
 
 
 

@@ -373,3 +373,82 @@ matches that roundness!
 3. Use border-radius on buttons, images, around icons, standout sections 
 and other elements
 
+
++---------------------------------+
+| WEB DESIGN RULES #7: WHITESPACE |
++---------------------------------+
+
+*the right amount of whitespace makes designs look clean, moderns and polished
+*creates invisible relationship between the elements of a layout
+
+- WHERE TO USE WHITESPACE
+
+1. Use tons of whitespace between sections
+
+2. Use a lot of whitespace between groups of elements
+
+3. Use whitespace between elements
+
+4. Inside groups of elements, try to use whitespace instead of lines
+
+- HOW MUCH WHITESPACE
+
+5. The more some elements (or groups of elements) belong together, the 
+closer they should be!
+*The Law of Proximity
+*if the elements are not related to each other, they should be farther apart
+
+6. Start with a lot of whitespace, maybe even too much! Then remove 
+whitespace from there
+
+7. Match other design choices. If you have big text or big icons, you need 
+more whitespace
+
+8. Try a hard rule, such as using multiples of 16px for all spacing
+
+
++---------------------------------------+
+| WEB DESIGN RULES #8: VISUAL HIERARCHY |
++---------------------------------------+
+
+*establish which elements are the most important
+*drawing attention to these most important elements
+*defining a "path" for users to guide them throgh the page
+*combination of position, size, colors,spacing, borders, and shadows
+
+- VISUAL HIERARCHY FUNDAMENTALS
+
+1. Position important elements closer to the top the page, where they get 
+more attention
+
+2. Use images mindfully, as they draw a lot of attention (larger images get 
+more attention)
+
+3. Whitespace creates separation, so use whitespace strategically to 
+emphasize elements
+
+- VISUAL HIERARCHY TEXT ELEMENTS
+
+4. For text elements, use font size, font weight, color, and whitespace to 
+convey importance
+*increase font size on important text
+*increase font weight
+*lighten color of less important text
+*add whitespace
+*add color on button/link
+
+5. What text elements to emphasize? Titles, sub-titles, links, buttons, data 
+points, icons
+*de-emphasize less important text like labels or secondary/additional info
+
+- VISUAL HIERARCHY BETWEEN COMPONENTS
+
+6. Emphasize an important component using background color, shadow, or 
+border (or multiple)
+
+7. Try emphasizing some component A over component B by de-emphasizing component B
+
+8. What components to emphasize? Testimonials, call-to-action sections, 
+highlight sections, preview cards, forms, pricing tables, important 
+rows/columns in tables, etc.
+

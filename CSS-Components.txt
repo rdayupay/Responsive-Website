@@ -86,7 +86,7 @@ D. LAYOUT PATTERNS
 8. Asymmetry/Experimental
 
 
-== ACCORDION ==
+== BUILDING AN ACCORDION ==
 1. create the accordion as main container and add items as child elements
 2. Choose 1 item and design with flexbox and grid
 3. Create copies of the item
@@ -101,7 +101,7 @@ CSS notes:
 }
 
 
-== CAROUSEL ==
+== BUILDING A CAROUSEL ==
 
 CSS notes:
 - adjust image size
@@ -156,3 +156,30 @@ padding: top right bottom left;
 {
   padding: 32px 48px 32px 86px;
 }
+
+
+== BUILDING A TABLE ==
+Semantic table - not usually used, but nice to know.
+
+<table></table>
+<tr></tr> - table row
+<td></td> - table data
+<thead></thead> - first row
+<tbody></tbody> - rows after the first
+<th></th> - table head (makes it bold)
+
+<table>
+  <thead>
+    <tr>
+      <th>Chair</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>Width</th>
+      <td>80 cm</td>
+    </tr>
+  </tbody>
+</table>
+

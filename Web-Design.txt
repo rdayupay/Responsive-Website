@@ -28,7 +28,7 @@ Web Developers - implement design using HTML, CSS and JavaScript code
 +--------------------------------------+
 
 
-== WEBSITE PERSONALITIES ==
+== WEBSITE PERSONALITIES == (more info at the end of file)
 
 1. Serious/Elegant - convey luxury and elegance
                    - based on thin serif typrfaces
@@ -451,4 +451,188 @@ border (or multiple)
 8. What components to emphasize? Testimonials, call-to-action sections, 
 highlight sections, preview cards, forms, pricing tables, important 
 rows/columns in tables, etc.
+
+
++-------------------------------------------+
+| WEB DESIGN RULES #9: USER EXPERIENCE (UX) |
++-------------------------------------------+
+
+Design is not just looks and feels like. Design is how it works. - steve jobs
+
+*UI - visual presentation of a product.
+"looks like and feels like"
+>layout, personality, typography, colors, icons, etc..
+
+*UX - overall experience the user has while interacting with the product.
+"how it works"
+>answer questions like: does the app feel logical and well thought out?
+>does the navigation work intuitively?
+>are users reaching their goals?
+
+- UI AND UX DESIGN
+*UI is graphical interface
+*UI Design is what makes an interface beautiful
+
+*UX is experience w/ interface
+*UX Design is what makes an interface useful and functional
+
+!!UX Design can not exist without UI Design!!
+
+*UX DESIGN GUIDING PRINCIPLE: GOALS
+>a website/application exists for a reason: a user has a goal for visiting it, and a business has a goal for creating it
+
+- UX RULES FOR USABILITY
+
+1. Don’t design complicated layouts. Don’t reinvent the wheel. Use patterns 
+that users know
+*familiarity is much more important than being original
+
+2. Make your call-to-action the most prominent element, and make the text 
+descriptive
+*usually buttons
+*describe what the buttons will do (Reserve, Add to cart)
+
+3. Use blue text and underlined text only for links!
+
+4. Animations should have a purpose and be fast: between 200 and 500 
+milliseconds
+
+5. In forms, align labels and fields in a single vertical line, to make the form 
+easier to scan
+
+6. Offer users good feedback for all actions: form errors, form success, etc. 
+[web apps]
+
+7. Place action buttons where they will create an effect (law of locality) [web 
+apps]
+*place the button where it will actually do the effect
+
+- UX RULES FOR WEBSITE CONTENT
+
+8. Use a descriptive, keyword-focused headline on your main page. Don’t be 
+vague or fancy!
+*describe the business actual purpose
+
+9. Only include relevant information, efficiently! Cut out fluff and make the 
+content 100% clear
+
+10. Use simple words! Avoid technical jargon and “smart-sounding” words
+
+11. Break up long text with sub-headings, images, block quotes, bullet points, 
+etc.
+
+
+== THE WEBSITE-PERSONALITIES-FRAMEWORK ==
+(open theory-lectures-v2-BEST file)
+
+- rules should be in place to make your choices limited for faster decisions -
+- website personality - general feeling the user should feel
+
+THE 7 PERSONALITIES:
+1. SERIOUS/ELEGANT
+OVERVIEW: Design for luxury and elegance, based on thin serif typefaces, golden or pastel colors, and big high-quality images
+INDUSTRIES: Real estate, high fashion, jewelry, luxury products or services
+TYPOGRAPHY: Serif typefaces (especially in headings), light font weight, small body font size
+COLORS: Gold, pastel colors, black, dark blue or grey
+IMAGES: Big, high-quality images are used to feature elegant and expensive products
+ICONS: Usually no icons, but thin icons and lines may be used
+SHADOWS: Usually no shadows
+BORDER-RADIUS: Usually no border-radius
+LAYOUT: A creative and experimental layout is quite common
+
+2. MINIMALIST/SIMPLE
+OVERVIEW: Focusses on the essential text content, using small or medium-sized sans-serif black text, lines, and few images and icons
+INDUSTRIES: Fashion, portfolios, minimalism companies, software startups
+TYPOGRAPHY: Boxy/squared sans-serif typefaces, small body font sizes
+COLORS: Usually black or dark grey, on pure white background. Usually 
+just one color throughout the design
+IMAGES: Few images, which can be used to add some color to the 
+design. Usually no illustrations, but if, than just black
+ICONS: Usually no icons, but small simple black icons may be used
+SHADOWS: Usually no shadows
+BORDER-RADIUS: Usually no border-radius
+LAYOUT: Simple layout, a narrow one-column layout is quite common
+
+3. PLAIN/NEUTRAL
+OVERVIEW: Design that gets out of the way by using very neutral and 
+small typefaces, and a boxy, structured, and condensed layout
+INDUSTRIES: Well-established corporations, companies that don’t want to 
+make an impact through design
+TYPOGRAPHY: Neutral-looking sans-serif typefaces are used, and text 
+is usually small and doesn’t have visual impact
+COLORS: Safe colors are employed, nothing too bright or to washed-out. 
+Blues and blacks are common 
+IMAGES: Images are frequently used, but usually in a small format
+ICONS: Usually no icons, but simple icons may be used
+SHADOWS: Usually no shadows
+BORDER-RADIUS: Usually no border-radius
+LAYOUT: Structured and condensed layout, with lots of boxes and rows
+
+4. BOLD/CONFIDENT
+OVERVIEW: Design that makes an impact, by featuring big and bold 
+typography, paired with confident use of big colored blocks
+INDUSTRIES Digital agencies, software startups, travel, “strong" companies
+TYPOGRAPHY: Boxy/squared sans-serif typefaces, big and bold typography, 
+especially headings. Uppercase headings are common
+COLORS: Usually multiple bright colors. Big color blocks/sections are 
+used to draw attention
+IMAGES: Lots of big images are usually displayed
+ICONS:  Usually no icons
+SHADOWS: Usually no shadows
+BORDER-RADIUS: Usually no border-radius
+LAYOUT: All kinds of layouts, no particular tendencies
+
+5. CALM/PEACEFUL
+OVERVIEW: For products and services that care about the consumer, which 
+is transmitted by calming pastel colors and soft serif headings
+INDUSTRIES Healthcare, all products with focus on consumer well-being
+TYPOGRAPHY: Soft serif typefaces frequently used for headings, but sans-serif headings might be used too (e.g for software products)
+COLORS: Pastel/washed-out colors: light oranges, yellows, browns, 
+greens, blues
+IMAGES: Images and illustrations are usual, matching calm color palette
+ICONS: Icons are quite frequent
+SHADOWS: Usually no shadows, but might be used sparingly
+BORDER-RADIUS: Some border-radius is usual
+LAYOUT: All kinds of layouts, no particular tendencies
+
+6. STARTUP/UPBEAT
+OVERVIEW: Widely used in startups, featuring medium-sized sans-serif 
+typefaces, light-grey backgrounds, and rounded elements
+INDUSTRIES Software startups, and other modern-looking companies
+TYPOGRAPHY: Medium-sized headings (not too large), usually one sans-serif 
+typeface in whole design. Tendency for lighter text colors
+COLORS: Blues, greens and purples are widely used. Lots of light 
+backgrounds (mainly gray), gradients are also common
+IMAGES: Images or illustrations are always used. 3D illustrations are 
+modern. Sometimes patterns and shapes add visual details
+ICONS: Icons are very frequent
+SHADOWS: Subtle shadows are frequent. Glows are becoming modern
+BORDER-RADIUS: Border-radius is very common
+LAYOUT: Rows of cards and Z-patterns are usual, as well as animations
+
+7. Playful/Fun
+OVERVIEW: Colorful and round designs, fueled by creative elements like 
+hand-drawn icons or illustrations, animations, and fun language
+INDUSTRIES Child products, animal products, food
+TYPOGRAPHY: Round and creative (e.g. handwritten) sans-serif typefaces are 
+frequent. Centered text is more common
+COLORS: Multiple colors are frequently used to design a colorful 
+layout, all over backgrounds and text
+IMAGES: Images, hand-drawn (or 3D) illustrations, and geometric 
+shapes and patterns are all very frequently used
+ICONS: Icons are very frequent, many times in a hand-drawn style
+SHADOWS: Subtle shadows are quite common, but not always used
+BORDER-RADIUS: Border-radius is very common
+LAYOUT: All kinds of layouts, no particular tendencies
+
+
+Advanced: Combining PLAYFULNESS and BOLDNESS
+
+- Serious is the opposite of Playful
+Most Serious to Most Playful:
+Serious/elegant > Minimalist/Simple > Plain/Neutral > Startup/Upbeat > Playful/Fun
+
+- Bold/Confident is the opposite of Calm/Peaceful
+*can be injected to others
+*the other 5 personalities above has little bits of personality of bold/calm which can be injected in their personalities
 

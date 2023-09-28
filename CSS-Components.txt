@@ -259,3 +259,38 @@ D. LAYOUT PATTERNS
 header {
   height: 100vh;
 }
+
+- to CENTER HEADER BOX
+> make header element position: relative;
+> in header-container class, add width and position: absolute;
+.header-container {
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%)
+}
+
+- to ADD BACKGROUND IMAGE
+{
+  background-image: url(abc.jpg);
+  background-size: cover;
+}
+
+- ADDING GRADIENT
+{
+  background-image: linear-gradient(#top, #bottom);
+}
+>> or left to right
+{
+  background-image: linear-gradient(to right, red, blue);
+}
+>> combine both
+{
+  background-image: linear-gradient(
+    rgba(34, 34, 34, 0.6),
+    rgba(34, 34, 34, 0.6)
+  ),
+  url(hero.jpg);
+}
+

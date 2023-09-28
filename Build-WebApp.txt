@@ -1,0 +1,46 @@
+Build Web Application
+
+- Fake Email Application
+- Side Navigation bar
+- Top: Menu bar
+- Scroll emails at left
+- Middle Main part
+- Side Bar
+- Whole app is size of Viewport
+
+<nav></nav> - element has bunch of navigation on the side which contain links and points to other places
+<menu></menu> - for menu buttons in application
+<main></main> - used to display most important element/part
+<aside></aside> - for additional info
+
+- the body element does not magically occupy the entire window space
+- it only occupy the needed space
+- set the height to 100vh to occupy the whole height of screen
+{
+  height: 100vh;
+}
+
+>> for BUTTONS
+- always remove border {border: none;}
+- always set {cursor: pointer;}
+
+- to move another button to the right and let the margin automatically adjust depending on the screen size.
+- when {justify-content: space-between;} doesnt work
+{ 
+  margin-left: auto;
+}
+
+- flexbox treats text as items  -
+
+>> for SCROLL
+- to not make the element grow larger than the content
+- at the main container, set {overflow: scroll;}
+- at the child element, set {flex-shrink: 0} -this will turnoff grow with content
+section {
+  overflow: scroll;
+}
+.email {
+  flex-shrink: 0;
+}
+- you don't have to do flex-shink if flexbox is not used.
+- overflow: hidden; can also be used.

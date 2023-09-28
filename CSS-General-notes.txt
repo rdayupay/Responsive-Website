@@ -245,6 +245,9 @@ FINAL ELEMENT HEIGHT =  TOP BORDER
   padding: 0;
 }
 
+- first value is top/bottom
+- second value is left/right
+- if 4 values -> padding: top right bottom left;
 +-----------------------+
 | padding-bottom: 50px; |
 | padding-top: 50px;    |
@@ -252,6 +255,18 @@ FINAL ELEMENT HEIGHT =  TOP BORDER
 |  Use shorthand:       |
 |  padding: 50px 0;     |
 +-----------------------+
+
+-margin can be used to center element-
+.class {
+  width: 700px;
+  margin: 100px auto;
+}
+
+-you can reset line height in the body
+body {
+  line-height: 1;
+}
+
 
 --> When creating space, it's always good to use "margin-bottom" <--
 

@@ -1,0 +1,261 @@
+== COMPONENTS AND LAYOUT PATTERNS ==
+
++--------------------------------------------------------+
+| WEB DESIGN RULES #10 - PART 1: ELEMENTS AND COMPONENTS |
++--------------------------------------------------------+
+
+- From ELEMENTS to WEBPAGE
+
+Step 1: Start with common ELEMENTS (paragraph, images, buttons).
+Step 2: Assemble elements into common COMPONENTS (feature card, pricing table, tab component).
+Step 3: Take all the component and use to build a LAYOUT using common layout PATTERNS.
+Step 4: Take all the smaller layouts or one big layout and assemble a final WEBPAGE from them.
+
+ELEMENTS -> COMPONENTS -(patterns)-> LAYOUTS -> WEBPAGE
+
+1. Use common elements and components to convey your website’s 
+information
+
+2. Combine components into layouts using common layout patterns
+*can be repeating components a couple of times
+
+3. Assemble different layout areas into a complete, final page
+
+
+- GALLERY INDEX: ELEMENTS, SECTIONS, PATTERNS -
+
+A. ELEMENTS
+1. Text
+2. Buttons
+3. Images
+4. Input elements
+5. Tags
+
+B. COMPONENTS
+1. Breadcrumbs
+-help users navigate complex sites
+2. Pagination
+3. Alert and status bars
+-small components that appear
+4. Statistics
+5. Gallery
+6. Feature box
+-groups together information
+7. Preview and profile cards
+-similar to feature box, but contains data points or things to preview
+8. Accordion
+-hiding content and display it once users click
+-mostly used for FAQs
+9. Tabs
+-product features
+-contains large data
+10. Carousel
+-multiple pieces of content at the same area
+-also called a "slider"
+11. Customer testimonials
+-most important pieces for some websites to sell
+-you can use carousel for testimonials
+12. Customer logos
+13. Featured-in logos
+-social proof where product was featured
+14. Steps
+-can show how service/product works
+15. Forms
+-login/signup forms are included
+16. Tables
+-display tabular data
+17. Pricing tables
+18. Modal windows
+-allows user to sign-in/signup
+
+-> for PART 2
+C. SECTION COMPONENTS
+1. Navigation
+2. Hero section
+3. Footer
+4. Call-to-action section
+5. Feature row
+
+D. LAYOUT PATTERNS
+1. Row of boxes or cards
+2. Grid of boxes or cards
+3. Z-pattern
+4. F-Pattern
+5. Single-column
+6. Sidebar
+7. Multi-column/magazine
+8. Asymmetry/Experimental
+
+
+== BUILDING AN ACCORDION ==
+1. create the accordion as main container and add items as child elements
+2. Choose 1 item and design with flexbox and grid
+3. Create copies of the item
+4. Temporarily add {display: none;} to the hidden box class to hide content like closing
+5. Create a new class beside items (open), use this to show the hidden box for this particular item
+6. Use {display: block;} to show the content as if it's open
+
+CSS notes:
+- rotate axis by 90 degrees
+{
+  flex-direction: column;
+}
+
+
+== BUILDING A CAROUSEL ==
+
+CSS notes:
+- adjust image size
+{
+  transform: scale(1.5);
+}
+
+>> Working with BUTTONS
+- for buttons, always remove the default border {border: none;}
+- remove from flex container by {position: absolute;} -> completely out of the flow of the page
+.btn {
+  border: none;
+  width:
+  height:
+  position: absolute;
+}
+
+> Centering buttons
+- first is set {top: 50%} to move the element by 50% of the parent container's height
+- then use {transform: translate(0, -50%)} which moves again the element back by 50% of the actual element's height
+- translate moves the element around, 0 means ignore the X (horizontal) value (x, y)
+.btn--left {
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+> Why not use flexbox to center?
+- sometimes we don't want to use flex property for this due to gaps, this might not work
+- we want this to be position absolute (outside the container)
+- we want to use translate horizontally (technique)
+- we want this to place outside the container, impossible to work with flexbox
+
+> Centering buttons outside the container, center of border
+.btn--left {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+>> Working with Dots
+- for empty space, put "$nbsp;" as a placeholder
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 32px);
+}
+
+>> Padding shorthand with 4 values
+padding: top right bottom left;
+{
+  padding: 32px 48px 32px 86px;
+}
+
+
+== BUILDING A TABLE ==
+Semantic table - not usually used, but nice to know.
+
+<table></table>
+<tr></tr> - table row
+<td></td> - table data
+<thead></thead> - first row
+<tbody></tbody> - rows after the first
+<th></th> - table head (makes it bold)
+
+<table>
+  <thead>
+    <tr>
+      <th>Chair</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th>Width</th>
+      <td>80 cm</td>
+    </tr>
+  </tbody>
+</table>
+
+- if two borders are near each other, you can make it collapse to combine
+{
+  border-collapse: collapse;
+}
+
+- make the width of each table head equal 100/4=25
+{
+  width: 25%;
+}
+
+
+== PAGINATION ==
+The "AND" selector
+
+> This is a DESCENDANT SELECTOR
+.page-link .page-link--current {
+  color:
+}
+
+> This is an AND selector (no space), meaning the element has both classes
+.page-link.page-link--current {
+  color:
+}
+
+- to make the specificity (0,2,0) similar to other class applied at the beginning
+- the one that is last (class) - the one that applies.
+- when the changes at the bottom doesn't apply, it might have a specificity (0,1,0)
+
+
+
+
++------------------------------------------------+
+| WEB DESIGN RULES #10 - PART 2: LAYOUT PATTERNS |
++------------------------------------------------+
+
+C. SECTION COMPONENTS
+1. Navigation
+2. Hero section
+- very first section of the page
+- contains description on the side of the main heading, buttons, images
+3. Footer
+- can include sidemaps, social icon, submit form
+4. Call-to-action section
+- close at the end of page, subscription button
+5. Feature row
+- small sections of page that describe the product
+- sometimes there's a small uppercase heading
+
+D. LAYOUT PATTERNS
+- specific way of repeating components a couple of times
+1. Row of boxes or cards
+2. Grid of boxes or cards
+- ASIDE: Nesting PATTERNS in COMPONENTS
+3. Z-pattern
+- image->text, then text->image
+4. F-Pattern
+- image->text
+- text->image
+5. Single-column
+- simple websites or mobile phones, simple blogpost
+6. Sidebar
+- blogs, options, table of contents, for summary
+7. Multi-column/magazine
+- combining different columns and width, magazine layout
+8. Asymmetry/Experimental
+- creative, standout design
+
+== BUILDING HERO ==
+
+- to make the header fill the whole screen, you can use viewport
+- vh = viewport height
+- vw = viewport width (rarely used)
+header {
+  height: 100vh;
+}

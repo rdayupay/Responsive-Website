@@ -1,0 +1,14 @@
+Build Web Application
+
+- Fake Email Application
+- Side Navigation bar
+- Top: Menu bar
+- Scroll emails at left
+- Middle Main part
+- Side Bar
+- Whole app is size of Viewport
+
+<nav></nav> - element has bunch of navigation on the side which contain links and points to other places
+<menu></menu> - for menu buttons in application
+<main></main> - used to display most important element/part
+<aside></aside> - for additional info

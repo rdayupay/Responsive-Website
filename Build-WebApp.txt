@@ -12,3 +12,10 @@ Build Web Application
 <menu></menu> - for menu buttons in application
 <main></main> - used to display most important element/part
 <aside></aside> - for additional info
+
+- the body element does not magically occupy the entire window space
+- it only occupy the needed space
+- set the height to 100vh to occupy the whole height of screen
+{
+  height: 100vh;
+}

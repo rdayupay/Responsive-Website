@@ -19,3 +19,28 @@ Build Web Application
 {
   height: 100vh;
 }
+
+>> for BUTTONS
+- always remove border {border: none;}
+- always set {cursor: pointer;}
+
+- to move another button to the right and let the margin automatically adjust depending on the screen size.
+- when {justify-content: space-between;} doesnt work
+{ 
+  margin-left: auto;
+}
+
+- flexbox treats text as items  -
+
+>> for SCROLL
+- to not make the element grow larger than the content
+- at the main container, set {overflow: scroll;}
+- at the child element, set {flex-shrink: 0} -this will turnoff grow with content
+section {
+  overflow: scroll;
+}
+.email {
+  flex-shrink: 0;
+}
+- you don't have to do flex-shink if flexbox is not used.
+- overflow: hidden; can also be used.

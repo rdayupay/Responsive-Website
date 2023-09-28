@@ -250,3 +250,12 @@ D. LAYOUT PATTERNS
 - combining different columns and width, magazine layout
 8. Asymmetry/Experimental
 - creative, standout design
+
+== BUILDING HERO ==
+
+- to make the header fill the whole screen, you can use viewport
+- vh = viewport height
+- vw = viewport width (rarely used)
+header {
+  height: 100vh;
+}

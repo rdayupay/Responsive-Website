@@ -68,6 +68,7 @@ B. COMPONENTS
 18. Modal windows
 -allows user to sign-in/signup
 
+-> for PART 2
 C. SECTION COMPONENTS
 1. Navigation
 2. Hero section
@@ -210,3 +211,42 @@ The "AND" selector
 - to make the specificity (0,2,0) similar to other class applied at the beginning
 - the one that is last (class) - the one that applies.
 - when the changes at the bottom doesn't apply, it might have a specificity (0,1,0)
+
+
+
+
++------------------------------------------------+
+| WEB DESIGN RULES #10 - PART 2: LAYOUT PATTERNS |
++------------------------------------------------+
+
+C. SECTION COMPONENTS
+1. Navigation
+2. Hero section
+- very first section of the page
+- contains description on the side of the main heading, buttons, images
+3. Footer
+- can include sidemaps, social icon, submit form
+4. Call-to-action section
+- close at the end of page, subscription button
+5. Feature row
+- small sections of page that describe the product
+- sometimes there's a small uppercase heading
+
+D. LAYOUT PATTERNS
+- specific way of repeating components a couple of times
+1. Row of boxes or cards
+2. Grid of boxes or cards
+- ASIDE: Nesting PATTERNS in COMPONENTS
+3. Z-pattern
+- image->text, then text->image
+4. F-Pattern
+- image->text
+- text->image
+5. Single-column
+- simple websites or mobile phones, simple blogpost
+6. Sidebar
+- blogs, options, table of contents, for summary
+7. Multi-column/magazine
+- combining different columns and width, magazine layout
+8. Asymmetry/Experimental
+- creative, standout design

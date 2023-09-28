@@ -193,3 +193,20 @@ Semantic table - not usually used, but nice to know.
   width: 25%;
 }
 
+
+== PAGINATION ==
+The "AND" selector
+
+> This is a DESCENDANT SELECTOR
+.page-link .page-link--current {
+  color:
+}
+
+> This is an AND selector (no space), meaning the element has both classes
+.page-link.page-link--current {
+  color:
+}
+
+- to make the specificity (0,2,0) similar to other class applied at the beginning
+- the one that is last (class) - the one that applies.
+- when the changes at the bottom doesn't apply, it might have a specificity (0,1,0)

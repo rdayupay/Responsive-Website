@@ -50,7 +50,8 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 == OMNIFOOD ==
 
-Step 1: DEFINE
+STEP 1: DEFINE
+
 -> Define WHO the website is for
 - for a client
 
@@ -61,7 +62,9 @@ Step 1: DEFINE
 -> Define target audience
 - Busy people who like technology, are interested in a healthy diet, and have a well-paying job
 
-Step 2: PLAN
+
+STEP 2: PLAN
+
 -> Plan and gather content
 - provided
 
@@ -96,3 +99,22 @@ Step 2: PLAN
 - Pricing + Features
 - Call to Action (CTA)
 - Footer
+
+
+STEP 3: SKETCH
+
+> Logo + Navigation
+> Hero
+- design and layout must follow the content, not the other way around
+> Featured in
+- Logo beside each other
+> How it works
+- Z pattern
+> Meals (and list of diets)
+- used Cards (image and data)
+> Testimonials + Gallery
+- Grid left testimonial, Right 3:4 images
+> Pricing + Features
+> Call to Action (CTA)
+> Footer
+

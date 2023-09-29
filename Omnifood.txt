@@ -161,3 +161,54 @@ STEP 3: SKETCH
 - Use media queries to expand design to a large screen
 - forces us to reduce websites and apps to the absolute essentials
 
+
+-- rem and max-width
+--MAX-WIDTH
+- use max-width instead of width to occupy whole viewport and adjust to its size
+{
+  max-width: 1000px;
+}
+
+- if the container width is larger than the specified max-width, then the width of the element equals the value that was specified for max width.
+- if the container width is less than the specified max-width, then the width of the element will be 100% of the container element widt
+
+--REM
+- rem is the root element's font-size
+- html is the root document (parent element)
+- if nothing's specified, 1 rem is equal the default element font-size (16px) since there's no defined font-size in html document.
+- you can just change the rem size in html document, and that will affect the whole document..
+{
+  padding: 4rem;      //64px
+  max-width: 50rem;   //800px
+  font-size: 2rem;    //32px
+
+  /* 1 rem = 16px by default */
+}
+
+- if you set 10px in html element, 1rem will now be equal to 10px instead of 16px.
+- by using this, you can easily adjust all sizes for a bigger/smaller screen
+html {
+font-size: 10px;
+}
+
+.class {
+  padding: 4rem;      //40px
+  max-width: 50rem;   //500px
+  font-size: 2rem;    //20px
+
+  /* 1 rem = 10px */
+}
+
+- this can complicate things when user wants to change the font-size
+- we can use % to address this problem.
+- use 1rem = 10px for easy calculations
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5%  */
+  /* Percentage of user's browser font-size setting */
+
+  font-size: 62.5%;
+}
+- 16 * 0.625 = 10px
+- if the user change the font-size to 18px, then the default font-size will adjust to 11.25 (1rem) since 18*0.625 = 11.25 

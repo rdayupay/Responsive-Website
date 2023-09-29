@@ -1,0 +1,47 @@
+== 7 STEPS TO A GREAT WEBSITE ==
+- The Process behind building a website
+
+1. DEFINE
+-> Define the project
+- Define WHO the website is for
+- Define WHAT the website is for (efine business or user goals)
+- Define a target audience
+
+2. PLAN
+-> Plan the project
+- Plan and gather website content: copy (text), images, videos, etc.. (usually provided by the client)
+- For bigger sites, plan out the sitemap: what pages the site needs, and how they are related (content hierarchy)
+- Based on content, plan what sections each page needs in order to convey the content's message, and in which order
+- Define the website personality
+
+3. SKETCH
+-> Sketch layout and component ideas
+- Think about what components you need, and how you can use them in layout patterns
+- Get ideas out of your head: sketch them with pen and paper or some design softwarec(figma)
+- This is an iterative process: experiment with different components and layouts, until you arrive at a first good solution
+- You don't need to sketch everything, and don't make it perfect. AT some point, you're ready to jump into HTML and CSS
+
+4. DESIGN AND BUILD
+-> Design and build website
+- Use decisions in Steps 1, 2, and 3 to design and build the website with HTML and CSS (designing in the browser)
+- Using the layout and components you selected in Step 3. You need to design the actual visual styles.
+- Create design based on selected website personality, the design guidelines, and inspiration
+- Use the client's baranding whenever possible: colors, typography, icons, etc..
+
+5. TEST AND OPTIMIZE
+- Ensure website works well in all major browsers (Chrome, Firefox, Safari, Edge, or old IE??)
+- Test website on actual mobile devices
+- Optimize all images, in terms of dimensions and file size
+- Fix simple accessibility problems (color contrast)
+- Run Lighthouse performance test in Chrome DevTools and try to fix issues
+- Think about Search Engine Optimization (SEO)
+
+6. LAUNCH
+- Upload website files to a hosting platform (Netlify)
+- Choose and buy a great domain name, memorable and easy to write
+
+7. MAINTAIN AND UPDATE
+- keep website updated over time
+- Install analytics software (Google analytics pr Fathom) to get stats about website users
+- A blog that is updated regularly is a good way to keep users coming back, good for SEO.
+

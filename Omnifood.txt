@@ -212,3 +212,9 @@ html {
 }
 - 16 * 0.625 = 10px
 - if the user change the font-size to 18px, then the default font-size will adjust to 11.25 (1rem) since 18*0.625 = 11.25 
+
+
+
+== BUILDING THE HERO ==
+
+- if you'll use section, there should be multiple sections in your page.

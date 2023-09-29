@@ -118,3 +118,46 @@ STEP 3: SKETCH
 > Call to Action (CTA)
 > Footer
 
+
+== RESPONSIVE DESIGN PRINCIPLES ==
+
+-- Responsive Design
+- technique to make a webpage adjust its layour and visual style to any possible screen size (window or viewport size)
+- makes website usable on all devices
+- not a separate technology, it's all just CSS!
+
+
+-- Responsive Design INGREDIENTS
+
+01 FLUID LAYOUTS
+- allow webpage to adapt to current viewport width
+- use % (or vh / vw) instead of px
+- use max-width instead of width
+
+02 RESPONSIVE UNITS
+- use rem unit instead of px
+- make it easy to scale the entire layout up or down automatically
+- helpful trick: set 1rem to 10px for easy calculations
+
+03 FLEXIBLE IMAGES
+- by default, images don't scale automatically, fix that
+- use % for image dimensions, together w/ max-width property
+
+04 MEDIA QUERIES
+- bring reponsive site to life!
+- change CSS styles on certain viewport widths (called breakpoints)
+- useless alone, needs fluid layouts from the beginning. MQ only used at the end.
+
+
+-- DESKTOP-FIRST vs MOBILE-FIRST Development
+
+--Desktop-first
+- start writing CSS for the desktop: large screen
+- Use media queries to shrink design to smaller screens
+- good practice to learn
+
+--Mobile-first
+- start writing CSS for moble device: small screen
+- Use media queries to expand design to a large screen
+- forces us to reduce websites and apps to the absolute essentials
+

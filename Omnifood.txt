@@ -1,0 +1,248 @@
+== 7 STEPS TO A GREAT WEBSITE ==
+- The Process behind building a website
+
+1. DEFINE
+-> Define the project
+- Define WHO the website is for
+- Define WHAT the website is for (efine business or user goals)
+- Define a target audience
+
+2. PLAN
+-> Plan the project
+- Plan and gather website content: copy (text), images, videos, etc.. (usually provided by the client)
+- For bigger sites, plan out the sitemap: what pages the site needs, and how they are related (content hierarchy)
+- Based on content, plan what sections each page needs in order to convey the content's message, and in which order
+- Define the website personality
+
+3. SKETCH
+-> Sketch layout and component ideas
+- Think about what components you need, and how you can use them in layout patterns
+- Get ideas out of your head: sketch them with pen and paper or some design softwarec(figma)
+- This is an iterative process: experiment with different components and layouts, until you arrive at a first good solution
+- You don't need to sketch everything, and don't make it perfect. AT some point, you're ready to jump into HTML and CSS
+
+4. DESIGN AND BUILD
+-> Design and build website
+- Use decisions in Steps 1, 2, and 3 to design and build the website with HTML and CSS (designing in the browser)
+- Using the layout and components you selected in Step 3. You need to design the actual visual styles.
+- Create design based on selected website personality, the design guidelines, and inspiration
+- Use the client's baranding whenever possible: colors, typography, icons, etc..
+
+5. TEST AND OPTIMIZE
+- Ensure website works well in all major browsers (Chrome, Firefox, Safari, Edge, or old IE??)
+- Test website on actual mobile devices
+- Optimize all images, in terms of dimensions and file size
+- Fix simple accessibility problems (color contrast)
+- Run Lighthouse performance test in Chrome DevTools and try to fix issues
+- Think about Search Engine Optimization (SEO)
+
+6. LAUNCH
+- Upload website files to a hosting platform (Netlify)
+- Choose and buy a great domain name, memorable and easy to write
+
+7. MAINTAIN AND UPDATE
+- keep website updated over time
+- Install analytics software (Google analytics pr Fathom) to get stats about website users
+- A blog that is updated regularly is a good way to keep users coming back, good for SEO.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== OMNIFOOD ==
+
+STEP 1: DEFINE
+
+-> Define WHO the website is for
+- for a client
+
+-> Define WHAT the website is for
+- Business goal: selling monthly food subscription
+- User goal: eating well effortlessly. w/o spending a lot of time and money
+
+-> Define target audience
+- Busy people who like technology, are interested in a healthy diet, and have a well-paying job
+
+
+STEP 2: PLAN
+
+-> Plan and gather content
+- provided
+
+-> sitemap
+- no need, we will just build a one-page marketing website (landing page)
+
+-> Define website personality
+- Based on the tech-centered target audience, as well as the actual product being sold, we will use the STARTUP/UPBEAT personality. Add some elements of CALM/PEACEFUL since product is about consumer well-being.
+
+-> Plan page sections
+## Sections
+- Navigation
+- Hero
+- Features
+- How it works
+- Diets
+- Meals
+- Call to Action (CTA)
+- Pricing
+- Gallery
+- Testimonials
+- Featured in
+- Footer
+
+-> after arrangement based of lectures
+- Navigation
+- Hero
+- Featured in
+- How it works
+- Meals (and list of Diets)
+- Testimonials + Gallery
+- Pricing + Features
+- Call to Action (CTA)
+- Footer
+
+
+STEP 3: SKETCH
+
+> Logo + Navigation
+> Hero
+- design and layout must follow the content, not the other way around
+> Featured in
+- Logo beside each other
+> How it works
+- Z pattern
+> Meals (and list of diets)
+- used Cards (image and data)
+> Testimonials + Gallery
+- Grid left testimonial, Right 3:4 images
+> Pricing + Features
+> Call to Action (CTA)
+> Footer
+
+
+== RESPONSIVE DESIGN PRINCIPLES ==
+
+-- Responsive Design
+- technique to make a webpage adjust its layour and visual style to any possible screen size (window or viewport size)
+- makes website usable on all devices
+- not a separate technology, it's all just CSS!
+
+
+-- Responsive Design INGREDIENTS
+
+01 FLUID LAYOUTS
+- allow webpage to adapt to current viewport width
+- use % (or vh / vw) instead of px
+- use max-width instead of width
+
+02 RESPONSIVE UNITS
+- use rem unit instead of px
+- make it easy to scale the entire layout up or down automatically
+- helpful trick: set 1rem to 10px for easy calculations
+
+03 FLEXIBLE IMAGES
+- by default, images don't scale automatically, fix that
+- use % for image dimensions, together w/ max-width property
+
+04 MEDIA QUERIES
+- bring reponsive site to life!
+- change CSS styles on certain viewport widths (called breakpoints)
+- useless alone, needs fluid layouts from the beginning. MQ only used at the end.
+
+
+-- DESKTOP-FIRST vs MOBILE-FIRST Development
+
+--Desktop-first
+- start writing CSS for the desktop: large screen
+- Use media queries to shrink design to smaller screens
+- good practice to learn
+
+--Mobile-first
+- start writing CSS for moble device: small screen
+- Use media queries to expand design to a large screen
+- forces us to reduce websites and apps to the absolute essentials
+
+
+-- rem and max-width
+--MAX-WIDTH
+- use max-width instead of width to occupy whole viewport and adjust to its size
+{
+  max-width: 1000px;
+}
+
+- if the container width is larger than the specified max-width, then the width of the element equals the value that was specified for max width.
+- if the container width is less than the specified max-width, then the width of the element will be 100% of the container element widt
+
+--REM
+- rem is the root element's font-size
+- html is the root document (parent element)
+- if nothing's specified, 1 rem is equal the default element font-size (16px) since there's no defined font-size in html document.
+- you can just change the rem size in html document, and that will affect the whole document..
+{
+  padding: 4rem;      //64px
+  max-width: 50rem;   //800px
+  font-size: 2rem;    //32px
+
+  /* 1 rem = 16px by default */
+}
+
+- if you set 10px in html element, 1rem will now be equal to 10px instead of 16px.
+- by using this, you can easily adjust all sizes for a bigger/smaller screen
+html {
+font-size: 10px;
+}
+
+.class {
+  padding: 4rem;      //40px
+  max-width: 50rem;   //500px
+  font-size: 2rem;    //20px
+
+  /* 1 rem = 10px */
+}
+
+- this can complicate things when user wants to change the font-size
+- we can use % to address this problem.
+- use 1rem = 10px for easy calculations
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5%  */
+  /* Percentage of user's browser font-size setting */
+
+  font-size: 62.5%;
+}
+- 16 * 0.625 = 10px
+- if the user change the font-size to 18px, then the default font-size will adjust to 11.25 (1rem) since 18*0.625 = 11.25 
+
+
+
+== BUILDING THE HERO ==
+
+- if you'll use section, there should be multiple sections in your page.
+
+- add border inside the element box
+use box-shadow and inset to contain the border inside
+{
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+- animate button in CSS
+> put in the original state/class
+{
+  transition: all 0.3s;
+}
+
+{
+  transition: background-color 0.3s;
+}
+
+- helper class to add gap between two buttons and reuse on other elements
+> add this to the html element
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+- overlapping images
+.delivered-imgs img {
+  margin-right: -1.6rem;
+}
+

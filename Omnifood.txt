@@ -298,3 +298,93 @@ but sometimes, it's much more beautiful when the hero section is a little bigger
 - don't use h3 to be the smaller heading above h2, h3 is supposed to describe h2 
 - you can use <span></span> instead
 
+- Shades of grey
+#000
+#333
+#444
+#555
+#fff
+#eee
+#ddd
+#ccc
+#bbb
+#aaa
+
+- CREATING CIRCLE WITHIN THE IMAGE W/O TOUCHING THE HTML FILE
+> use pseudo elements ::before and ::after
+> first, you need to create a square
+> if {height} doesn't work, use {padding} since it's already included in the width
+> and 60% of the parent elements width
+.step-img-box::before {
+  content: "";
+  display: block;
+  width: 60%;
+  /* height: 60%; */
+
+  /* 60% of parent's width */
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+}
+
+> use {position: absolute;} in the pseudo element
+> and {position: relative;} in parent element
+> use {z-index: -1; } to push the circle behind
+.step-img-box {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-img-box::before {
+  content: "";
+  display: block;
+  width: 60%;
+  /* height: 60%; */
+
+  /* 60% of parent's width */
+  padding-bottom: 60%;
+
+  background-color: #fdf2e9;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: -1;
+}
+
+> create another circle inside the first circle
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  width: 60%;
+  /* height: 60%; */
+
+  /* 60% of parent's width */
+  padding-bottom: 60%;
+
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+
+

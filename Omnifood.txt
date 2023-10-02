@@ -246,3 +246,21 @@ use box-shadow and inset to contain the border inside
   margin-right: -1.6rem;
 }
 
+
+== BUILDING THE HEADER ==
+
+<header></header> - can be used in multiple website pages
+
+<main></main> element is used to indicate the main content of the website.
+- it is not used in elements that can be repeated like the <header></header> and <footer></footer>
+
+- when you want header to stay in position, make it sticky with fixed height
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+}

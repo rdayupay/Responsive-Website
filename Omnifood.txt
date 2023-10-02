@@ -264,3 +264,31 @@ use box-shadow and inset to contain the border inside
   /* Because we want header to be sticky later */
   height: 9.6rem;
 }
+
+
+== REUSABLE GRID ==
+- export grid-template-columns in another class
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+- reusable container to center items
+.container {
+  /* or 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+-- Hero class can also be reusable like the .container,
+but sometimes, it's much more beautiful when the hero section is a little bigger, hence the difference.
+

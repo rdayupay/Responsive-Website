@@ -218,3 +218,25 @@ html {
 == BUILDING THE HERO ==
 
 - if you'll use section, there should be multiple sections in your page.
+
+- add border inside the element box
+use box-shadow and inset to contain the border inside
+{
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+- animate button in CSS
+> put in the original state/class
+{
+  transition: all 0.3s;
+}
+
+{
+  transition: background-color 0.3s;
+}
+
+- helper class to add gap between two buttons and reuse on other elements
+> add this to the html element
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}

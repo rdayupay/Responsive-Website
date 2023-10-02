@@ -292,3 +292,9 @@ use box-shadow and inset to contain the border inside
 -- Hero class can also be reusable like the .container,
 but sometimes, it's much more beautiful when the hero section is a little bigger, hence the difference.
 
+
+
+== HOW IT WORKS SECTION ==
+- don't use h3 to be the smaller heading above h2, h3 is supposed to describe h2 
+- you can use <span></span> instead
+

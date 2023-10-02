@@ -240,3 +240,9 @@ use box-shadow and inset to contain the border inside
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
+
+- overlapping images
+.delivered-imgs img {
+  margin-right: -1.6rem;
+}
+

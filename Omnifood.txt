@@ -388,3 +388,12 @@ but sometimes, it's much more beautiful when the hero section is a little bigger
 }
 
 
+== FEATURED IN SECTION ==
+- add image filter to change appearance
+> this will make it all grey
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+

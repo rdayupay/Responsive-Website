@@ -414,3 +414,57 @@ but sometimes, it's much more beautiful when the hero section is a little bigger
   transform: translateY(-1.2rem);
 }
 
+
+== TESTIMONIALS SECTION ==
+- you can use <figure></figure> for images
+- use <figcaption></figcaption> to put caption under the image
+- add <padding></padding> to create space between the container and the window 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+- for gallery item, to remove spacing between images, declare it as "block"
+.gallery-item img {
+  display: block;
+}
+
+- when creating a grid of images, give it a fixed width to make it more flexible to work with
+> this will reduce the size to occupy the container
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+}
+
+- for grid size, if you don't want to adjust the column size, treat the FR as percentages
+{
+  grid-template-columns: 55fr 45fr;
+}
+
+- to prevent the images from creating space when window size is being adjusted, set align-items to center
+.section-testimonials {
+  align-items: center;
+}
+
+- To animate images, use {transform: } property
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+- use {overflow: hidden; } if you want the item contained inside the container during transform
+.gallery-item {
+  overflow: hidden;
+}

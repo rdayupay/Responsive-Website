@@ -397,3 +397,6 @@ but sometimes, it's much more beautiful when the hero section is a little bigger
   opacity: 50%;
 }
 
+
+== MALS SECTION ==
+- use {overflow: hidden; } to smoothen the border of an image if border-radius is used

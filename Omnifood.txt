@@ -398,5 +398,19 @@ but sometimes, it's much more beautiful when the hero section is a little bigger
 }
 
 
-== MALS SECTION ==
+== MEALS SECTION ==
 - use {overflow: hidden; } to smoothen the border of an image if border-radius is used
+
+- you can use currentColor in border-bottom
+
+- ADD BOUNCING EFFECT to cards during hover (animation)
+> use {transform: translate(x, y); }
+> add {transition: all 0.4s; } to the parent element
+.meal {
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+}
+

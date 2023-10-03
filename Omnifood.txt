@@ -468,3 +468,6 @@ but sometimes, it's much more beautiful when the hero section is a little bigger
 .gallery-item {
   overflow: hidden;
 }
+
+
+== PRICING and FEAUTURES SECTION ==

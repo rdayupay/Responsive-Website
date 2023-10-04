@@ -628,3 +628,4 @@ Breakpoints - viewport width where we want our design to change
 Instead, 1rem = 1em =16px
 > rem = root font-size
 > em = current font-size
+> add media query every 200-300pixels, not every 50px

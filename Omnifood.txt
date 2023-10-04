@@ -550,3 +550,18 @@ but sometimes, it's much more beautiful when the hero section is a little bigger
   aria-label="Woman enjoying food"
 ></div>
 
+- html can only collect data, but cannot receive it anywhere
+> 'action' can be used to send data to a url
+<form class="cta-form" action="#"></form>
+
+- you can use "id" to link label and input elements
+<form class="cta-form" action="#">
+  <label for="full-name">Full Name</label>
+  <input id="full-name" type="text" placeholder="John Smith" />
+</form>
+
+- In <option></option> of the <select></select> element
+> "value" is will be the id of the option they selected
+<option value="friends">Friends and family</option>
+
+- you can group the label and input using a div without class

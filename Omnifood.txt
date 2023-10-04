@@ -508,3 +508,45 @@ but sometimes, it's much more beautiful when the hero section is a little bigger
   padding: 1.6rem;
   border-radius: 50%;
 }
+
+
+== CTA SECTION ==
+- Ways to declare Gradients
+{
+  background-image: linear-gradient(90deg, red, #e67e22);
+}
+
+{
+  background-image: linear-gradient(to right, red, #e67e22);
+}
+
+{
+  background-image: linear-gradient(to right bottom, red, #e67e22);
+}
+
+- when adding background image, take note of the folder your css file is in.
+> you first need to go outside of the folder using "../" to find the folder of the image
+.cta-img-box {
+  background-image: url("../img/eating.jpg");
+}
+
+- Combining gradients and image
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+- For the div containing the background-image, you can use role to set its content as image
+> By doing so, you could delete the placeholder text so that the element will not shrink
+<div
+  class="cta-img-box"
+  role="img"
+  aria-label="Woman enjoying food"
+></div>
+

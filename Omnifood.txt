@@ -414,3 +414,177 @@ but sometimes, it's much more beautiful when the hero section is a little bigger
   transform: translateY(-1.2rem);
 }
 
+
+== TESTIMONIALS SECTION ==
+- you can use <figure></figure> for images
+- use <figcaption></figcaption> to put caption under the image
+- add <padding></padding> to create space between the container and the window 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+- for gallery item, to remove spacing between images, declare it as "block"
+.gallery-item img {
+  display: block;
+}
+
+- when creating a grid of images, give it a fixed width to make it more flexible to work with
+> this will reduce the size to occupy the container
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+}
+
+- for grid size, if you don't want to adjust the column size, treat the FR as percentages
+{
+  grid-template-columns: 55fr 45fr;
+}
+
+- to prevent the images from creating space when window size is being adjusted, set align-items to center
+.section-testimonials {
+  align-items: center;
+}
+
+- To animate images, use {transform: } property
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+- use {overflow: hidden; } if you want the item contained inside the container during transform
+.gallery-item {
+  overflow: hidden;
+}
+
+
+== PRICING and FEAUTURES SECTION ==
+- use {justify-self: } to move one item on the grid
+.pricing-plan--starter {
+  justify-self: end;
+}
+
+- when adding border to an item of the grid, check whether it's aligned with the item beside it. You can subtract the border from that item's padding.
+
+
+== FEATURES SECTION ==
+- when adding margin-bottom to grid, don't forget to remove the margin from the last child so there will be no redundant margin-bottoms causing too much space.
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+
+  margin-bottom: 9.6rem;
+}
+
+.grid:last-child {
+  margin-bottom: 0;
+}
+
+> you can achieve both by using the pseudo class "not"
+> remove {margin-bottom: } declaration from both class, and use this class instead
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+- this will create the circle inside the icons
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+
+== CTA SECTION ==
+- Ways to declare Gradients
+{
+  background-image: linear-gradient(90deg, red, #e67e22);
+}
+
+{
+  background-image: linear-gradient(to right, red, #e67e22);
+}
+
+{
+  background-image: linear-gradient(to right bottom, red, #e67e22);
+}
+
+- when adding background image, take note of the folder your css file is in.
+> you first need to go outside of the folder using "../" to find the folder of the image
+.cta-img-box {
+  background-image: url("../img/eating.jpg");
+}
+
+- Combining gradients and image
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+- For the div containing the background-image, you can use role to set its content as image
+> By doing so, you could delete the placeholder text so that the element will not shrink
+<div
+  class="cta-img-box"
+  role="img"
+  aria-label="Woman enjoying food"
+></div>
+
+- html can only collect data, but cannot receive it anywhere
+> 'action' can be used to send data to a url
+<form class="cta-form" action="#"></form>
+
+- you can use "id" to link label and input elements
+<form class="cta-form" action="#">
+  <label for="full-name">Full Name</label>
+  <input id="full-name" type="text" placeholder="John Smith" />
+</form>
+
+- In <option></option> of the <select></select> element
+> "value" is will be the id of the option they selected
+<option value="friends">Friends and family</option>
+
+- you can group the label and input using a div without class
+
+- This will force to inherit the font-family
+{
+  font-family: inherit;
+}
+
+- focus pseudo class is just like link, another state
+> used when input or button is clicked
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+
+== FOOTER SECTION ==
+- if you want to add vertical spacing in links,
+> make it a block element, since it's an inline element by default
+> since margins are included in block elements
+
+- to push an item at the end of the corner (copyright)
+> declare parent element as flex
+> in child element, add {margin-top: auto;}
+

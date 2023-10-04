@@ -578,3 +578,13 @@ but sometimes, it's much more beautiful when the hero section is a little bigger
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
 
+
+== FOOTER SECTION ==
+- if you want to add vertical spacing in links,
+> make it a block element, since it's an inline element by default
+> since margins are included in block elements
+
+- to push an item at the end of the corner (copyright)
+> declare parent element as flex
+> in child element, add {margin-top: auto;}
+

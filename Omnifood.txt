@@ -471,3 +471,10 @@ but sometimes, it's much more beautiful when the hero section is a little bigger
 
 
 == PRICING and FEAUTURES SECTION ==
+- use {justify-self: } to move one item on the grid
+.pricing-plan--starter {
+  justify-self: end;
+}
+
+- when adding border to an item of the grid, check whether it's aligned with the item beside it. You can subtract the border from that item's padding.
+

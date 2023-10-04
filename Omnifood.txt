@@ -588,3 +588,43 @@ but sometimes, it's much more beautiful when the hero section is a little bigger
 > declare parent element as flex
 > in child element, add {margin-top: auto;}
 
+
+== MEDIA QUERIES == (WITH MAX-WIDTH)
+- @media (max-width: 600px)
+> "Is width <= 600px ?"
+> media query will check if screen is less than or equal 600px
+> if it is, all codes will apply
+> 600px - maximum width at which media query still applies
+
+- @media (max-width: 1200px)
+> "Is width <= 1200px ?"
+> if it is, code will apply
+
+> css code outside of any media query will still apply
+> At a 400px width viewport, both media query (600px/1200px) will apply
+> when there are conflicting styles, the last one applied will be followed
+
+
+-- Selecting BREAKPOINTS --
+
+Breakpoints - viewport width where we want our design to change
+            - pixel values we want to put our media queries
+
+- Strategies for selecting Breakpoints
+> BAD: Do not base on popular devices
+> GOOD: Choose based on screen width ranges (most used)
+  300px - 500px | 600px
+  600px - 900px | 900px
+  900px - 1100px | 1200px --> 1200px
+> PERFECT: Set breakpoints where the design breaks down
+
+> This is an important tag in HTML for Responsive web design
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+> don't use pixels in media queries, use em
+> MQ don't respond to "font-size" in html
+> 1rem in media queries will always be the default
+> rem and em do NOT depend HTML font-size in media queries!
+Instead, 1rem = 1em =16px
+> rem = root font-size
+> em = current font-size

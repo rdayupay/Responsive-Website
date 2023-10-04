@@ -565,3 +565,16 @@ but sometimes, it's much more beautiful when the hero section is a little bigger
 <option value="friends">Friends and family</option>
 
 - you can group the label and input using a div without class
+
+- This will force to inherit the font-family
+{
+  font-family: inherit;
+}
+
+- focus pseudo class is just like link, another state
+> used when input or button is clicked
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+

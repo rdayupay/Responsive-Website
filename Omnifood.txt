@@ -478,3 +478,24 @@ but sometimes, it's much more beautiful when the hero section is a little bigger
 
 - when adding border to an item of the grid, check whether it's aligned with the item beside it. You can subtract the border from that item's padding.
 
+
+== FEATURES SECTION ==
+- when adding margin-bottom to grid, don't forget to remove the margin from the last child so there will be no redundant margin-bottoms causing too much space.
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+
+  margin-bottom: 9.6rem;
+}
+
+.grid:last-child {
+  margin-bottom: 0;
+}
+
+> you can achieve both by using the pseudo class "not"
+> remove {margin-bottom: } declaration from both class, and use this class instead
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+

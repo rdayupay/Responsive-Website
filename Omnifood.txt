@@ -50,6 +50,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 == OMNIFOOD ==
 
+///////////////////////////////////////////////////////////
 STEP 1: DEFINE
 
 -> Define WHO the website is for
@@ -63,6 +64,7 @@ STEP 1: DEFINE
 - Busy people who like technology, are interested in a healthy diet, and have a well-paying job
 
 
+///////////////////////////////////////////////////////////
 STEP 2: PLAN
 
 -> Plan and gather content
@@ -101,6 +103,7 @@ STEP 2: PLAN
 - Footer
 
 
+///////////////////////////////////////////////////////////
 STEP 3: SKETCH
 
 > Logo + Navigation
@@ -118,6 +121,10 @@ STEP 3: SKETCH
 > Call to Action (CTA)
 > Footer
 
+
+
+///////////////////////////////////////////////////////////
+STEP 4: DESIGN AND BUILD
 
 == RESPONSIVE DESIGN PRINCIPLES ==
 
@@ -734,3 +741,18 @@ btnNavEl.addEventListener("click", function () {
 > add the id to the href of the link (#id)
 <a href = "#cta"></a>
 > add scroll-behavior to html element in css
+
+
+///////////////////////////////////////////////////////////
+STEP 5: TEST AND OPTIMIZE
+
+- website works well in all major browsers
+- test on actual mobile devices
+- optimize all images (see lecture on images)
+- fix simple accessibility (color issues)
+- run the Lighthouse performance test in Chrome DevTools
+- Search Engine Optimization (SEO)
+
+
+- {backdrop-filter: blur(10px)} blurs everything behind the element, needs webkit for Safari browser
+{-webkit-backdrop-filter: blur(10px);}

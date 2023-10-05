@@ -727,3 +727,10 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
+
+== Smooth scrolling ==
+- in order for the navigation to work in the page
+> create an "id" at the desired section
+> add the id to the href of the link (#id)
+<a href = "#cta"></a>
+> add scroll-behavior to html element in css

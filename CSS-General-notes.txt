@@ -129,6 +129,12 @@ li:nth-child(odd) {
   color: red;
 }
 
+> This means the 2nd child of the parent element, NOT the second child of step-img-box class
+.step-img-box:nth-child(2) {
+
+
+}
+
 EXCEPTIONS:
 THIS WILL NOT WORK!
 article p:first-child {

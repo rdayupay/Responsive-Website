@@ -681,3 +681,37 @@ Instead, 1rem = 1em =16px
 - {overflow-x: hidden;} is used when things that overflow in the viewport will be hidden
 > can be used in transition of mobile navigation
 > use transform: translate for animations
+
+
+== JAVASCRIPT ==
+- connect js file to the html file
+<script defer src="js/script.js"></script>
+
+- add this to js file to verify that the files are connected, check dev tools console
+console.log("Hello World!");
+
+- query selector will display the element
+const h1 = document.querySelector(".heading-primary");
+console.log(h1);
+
+- replacing content using javascript
+h1.textContent = myName;
+h1.style.backgroundColor = "red";
+h1.style.padding = "5rem";
+
+- functions are reusable pieces of code that we can define somewhere else and use them.
+h1.addEventListener() - addEventListener() is a function
+
+- this will create another "function" and when you click h1, the code under the function body will apply
+h1.addEventListener("click", function () {
+  h1.textContent = myName;
+  h1.style.backgroundColor = "red";
+  h1.style.padding = "5rem";
+});
+
+- automatically update the year using js
+> encapsulate the date in html in a new class ".year"
+> create variable and function in js
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;

@@ -629,3 +629,55 @@ Instead, 1rem = 1em =16px
 > rem = root font-size
 > em = current font-size
 > add media query every 200-300pixels, not every 50px
+
+
+== MOBILE NAVIGATION ==
+
+- you can select a class based on attributes
+
+<ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+
+.icon-mobile-nav[name="close-outline"]{
+  display: none;
+}
+
+- By default, set the {display: none;} in your css file
+> edit it on media queries when it will be used
+
+- Make the main navigation {position: absolute;} in MQ to remove it from the flow
+> make it flex
+> let it cover the entire viewport and put it to center
+
+> {display: none;} to hide the navigation is not recommended since it also limit you to create animations
+
+- use nav-open in header for navigation to be controlled in javascript
+> it is now a parent of main-nav, and can be used is css
+> set opacity to 1 of main-nav
+
+
+- Strategies to hide element without using {display: none;}
+
+/* Hide navigation */
+/* Allows NO transitions at all */
+/* display: none; */
+
+1 Hide element visually
+  opacity: 0;
+
+2 Make it unaccessible to mouse and keyboard
+  pointer-events: none;
+
+3 Hide it from screen readers
+  visibility: hidden;
+
+
+- set it back when nav is open class
+.nav-open .main-nav {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+- {overflow-x: hidden;} is used when things that overflow in the viewport will be hidden
+> can be used in transition of mobile navigation
+> use transform: translate for animations

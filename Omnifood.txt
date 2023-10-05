@@ -756,3 +756,17 @@ STEP 5: TEST AND OPTIMIZE
 
 - {backdrop-filter: blur(10px)} blurs everything behind the element, needs webkit for Safari browser
 {-webkit-backdrop-filter: blur(10px);}
+
+- JPEG images does not have transparent sides
+
+- This will render the image that's supported within a browser
+<picture>
+  <source srcset="img/hero.webp" type="image/webp" />
+  <source srcset="img/hero-min.png" type="image/png" />
+
+  <img
+    src="img/hero-min.png"
+    class="hero-img"
+    alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+   />
+</picture>

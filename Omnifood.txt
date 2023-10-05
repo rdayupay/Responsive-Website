@@ -588,3 +588,96 @@ but sometimes, it's much more beautiful when the hero section is a little bigger
 > declare parent element as flex
 > in child element, add {margin-top: auto;}
 
+
+== MEDIA QUERIES == (WITH MAX-WIDTH)
+- @media (max-width: 600px)
+> "Is width <= 600px ?"
+> media query will check if screen is less than or equal 600px
+> if it is, all codes will apply
+> 600px - maximum width at which media query still applies
+
+- @media (max-width: 1200px)
+> "Is width <= 1200px ?"
+> if it is, code will apply
+
+> css code outside of any media query will still apply
+> At a 400px width viewport, both media query (600px/1200px) will apply
+> when there are conflicting styles, the last one applied will be followed
+
+
+-- Selecting BREAKPOINTS --
+
+Breakpoints - viewport width where we want our design to change
+            - pixel values we want to put our media queries
+
+- Strategies for selecting Breakpoints
+> BAD: Do not base on popular devices
+> GOOD: Choose based on screen width ranges (most used)
+  300px - 500px | 600px
+  600px - 900px | 900px
+  900px - 1100px | 1200px --> 1200px
+> PERFECT: Set breakpoints where the design breaks down
+
+> This is an important tag in HTML for Responsive web design
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+> don't use pixels in media queries, use em
+> MQ don't respond to "font-size" in html
+> 1rem in media queries will always be the default
+> rem and em do NOT depend HTML font-size in media queries!
+Instead, 1rem = 1em =16px
+> rem = root font-size
+> em = current font-size
+> add media query every 200-300pixels, not every 50px
+
+
+== MOBILE NAVIGATION ==
+
+- you can select a class based on attributes
+
+<ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+
+.icon-mobile-nav[name="close-outline"]{
+  display: none;
+}
+
+- By default, set the {display: none;} in your css file
+> edit it on media queries when it will be used
+
+- Make the main navigation {position: absolute;} in MQ to remove it from the flow
+> make it flex
+> let it cover the entire viewport and put it to center
+
+> {display: none;} to hide the navigation is not recommended since it also limit you to create animations
+
+- use nav-open in header for navigation to be controlled in javascript
+> it is now a parent of main-nav, and can be used is css
+> set opacity to 1 of main-nav
+
+
+- Strategies to hide element without using {display: none;}
+
+/* Hide navigation */
+/* Allows NO transitions at all */
+/* display: none; */
+
+1 Hide element visually
+  opacity: 0;
+
+2 Make it unaccessible to mouse and keyboard
+  pointer-events: none;
+
+3 Hide it from screen readers
+  visibility: hidden;
+
+
+- set it back when nav is open class
+.nav-open .main-nav {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+- {overflow-x: hidden;} is used when things that overflow in the viewport will be hidden
+> can be used in transition of mobile navigation
+> use transform: translate for animations

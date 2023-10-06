@@ -50,6 +50,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 == OMNIFOOD ==
 
+///////////////////////////////////////////////////////////
 STEP 1: DEFINE
 
 -> Define WHO the website is for
@@ -63,6 +64,7 @@ STEP 1: DEFINE
 - Busy people who like technology, are interested in a healthy diet, and have a well-paying job
 
 
+///////////////////////////////////////////////////////////
 STEP 2: PLAN
 
 -> Plan and gather content
@@ -101,6 +103,7 @@ STEP 2: PLAN
 - Footer
 
 
+///////////////////////////////////////////////////////////
 STEP 3: SKETCH
 
 > Logo + Navigation
@@ -118,6 +121,10 @@ STEP 3: SKETCH
 > Call to Action (CTA)
 > Footer
 
+
+
+///////////////////////////////////////////////////////////
+STEP 4: DESIGN AND BUILD
 
 == RESPONSIVE DESIGN PRINCIPLES ==
 
@@ -681,3 +688,85 @@ Instead, 1rem = 1em =16px
 - {overflow-x: hidden;} is used when things that overflow in the viewport will be hidden
 > can be used in transition of mobile navigation
 > use transform: translate for animations
+
+
+== JAVASCRIPT ==
+- connect js file to the html file
+<script defer src="js/script.js"></script>
+
+- add this to js file to verify that the files are connected, check dev tools console
+console.log("Hello World!");
+
+- query selector will display the element
+const h1 = document.querySelector(".heading-primary");
+console.log(h1);
+
+- replacing content using javascript
+h1.textContent = myName;
+h1.style.backgroundColor = "red";
+h1.style.padding = "5rem";
+
+- functions are reusable pieces of code that we can define somewhere else and use them.
+h1.addEventListener() - addEventListener() is a function
+
+- this will create another "function" and when you click h1, the code under the function body will apply
+h1.addEventListener("click", function () {
+  h1.textContent = myName;
+  h1.style.backgroundColor = "red";
+  h1.style.padding = "5rem";
+});
+
+- automatically update the year using js
+> encapsulate the date in html in a new class ".year"
+> create variable and function in js
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
+
+- this will add "nav-open" to the class of header element
+> create variable for the menu icon (btnNavEl)
+> query selector will search for the element with class ".header" and put it into variable "headerEl"
+> when btnNavEl is clicked, it will add "nav-open" to the class list
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+
+== Smooth scrolling ==
+- in order for the navigation to work in the page
+> create an "id" at the desired section
+> add the id to the href of the link (#id)
+<a href = "#cta"></a>
+> add scroll-behavior to html element in css
+
+
+///////////////////////////////////////////////////////////
+STEP 5: TEST AND OPTIMIZE
+
+- website works well in all major browsers
+- test on actual mobile devices
+- optimize all images (see lecture on images)
+- fix simple accessibility (color issues)
+- run the Lighthouse performance test in Chrome DevTools
+- Search Engine Optimization (SEO)
+
+
+- {backdrop-filter: blur(10px)} blurs everything behind the element, needs webkit for Safari browser
+{-webkit-backdrop-filter: blur(10px);}
+
+- JPEG images does not have transparent sides
+
+- This will render the image that's supported within a browser
+<picture>
+  <source srcset="img/hero.webp" type="image/webp" />
+  <source srcset="img/hero-min.png" type="image/png" />
+
+  <img
+    src="img/hero-min.png"
+    class="hero-img"
+    alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+   />
+</picture>
